@@ -1,0 +1,113 @@
+
+.form{
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.form__heading{
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+  width: 60px;
+  height: 12px;
+  margin: 25px 0 10px;
+  &::after{
+    background-color: #63d1bb;
+    width: 200px;
+    height: 1px;
+    display: block;
+    content: '';
+    margin: -8px 0 0 60px;
+  }
+}
+.form__heading--phone{
+  margin: 33px 0 10px;
+}
+.form__heading--mail{
+  margin: 32px 0 10px;
+  &::after{
+    margin: -8px 0 0 80px;
+    width: 180px;
+  }
+}
+.form__heading--additional{
+  margin: 32px 0 30px;
+}
+.form__option{
+  min-height: 40px;
+  padding: 22px 0 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.form__option input{
+  margin: 0;
+  min-width: 62px;
+}
+.form__option p{
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 0 0;
+}
+.form__name{
+  display: flex;
+  flex-direction: column;
+  height: 75px;
+  padding: 0;
+  margin: 16px 0 0;
+}
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"]{
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #444444;
+  border: none;
+  border-bottom: 2px solid #000000;
+  padding: 18px 0 15px;
+}
+.form__wishes{
+  vertical-align: top;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #444444;
+  border: 2px solid #000000;
+  padding: 17px 15px;
+  height: 105px;
+  resize: none;
+}
+.form__comment{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #444444;
+  margin: 15px 0 30px;
+}
+.form__submit{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 24px;
+  color: #444444;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 2px solid #444444;
+  margin: 0 0 56px;
+  background: #ffffff;
+  &:hover{
+    background: #444444;
+    color: white;
+  }
+  &:active{
+    color: #8d8d8d;
+  }
+}
