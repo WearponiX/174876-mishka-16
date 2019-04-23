@@ -1,0 +1,64 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+.page-header__top-menu{
+  display: flex;
+  flex-direction: row;
+}
+.page-header__logo {
+  width: 240px;
+  height: 35px;
+  padding: 22px 0px;
+  display: flex;
+}
+.page-header__logo  svg {
+  margin: 0 0 0 48%;
+  display: block;
+  &:hover{fill: #666666;}
+  &:active{fill: #b2b2b2;}
+}
+.main-nav__toggle{
+  border: none;
+  background: black;
+  display: flex;
+  width: 20px;
+  height: 2px;
+  margin: 38px 31px 28px 29px;
+}
+.site-list{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.site-list__item {
+  border-bottom: 1px solid #ececec;
+    &:last-child{border: none}
+}
+.site-list__item a{
+  display: flex;
+  padding: 26px 0 28px 73px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+  cursor: pointer;
+}
+.site-list__item--search path,
+.site-list__item--cart path {
+  fill: #d3d2d2;
+}
+.site-list__item--search svg {
+  margin-left: -42px;
+  margin-top: 7px;
+  position: absolute;
+}
+.site-list__item--cart svg {
+  margin-left: -44px;
+  margin-top: 5px;
+  position: absolute;
+}
