@@ -54,26 +54,65 @@
     <h1 class="page-main__headline">Вязание на заказ</h1>
     <p class="page-main__form-desctription">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form class="page-main__form form" action="#">
-      <p class="form__heading form__heading--type">Тип</p>
-        <label class="form__option form__type"><input type="radio" name="item-type" value="for-interior" checked><p>Аксессуар для интерьера</p></label>
-        <label class="form__option form__type"><input type="radio" name="item-type" value="toy"><p>Детская игрушка</p></label>
+
+    <p class="form__heading form__heading--type">Тип</p>
+      <label class="form__option form__type">
+        <input type="radio" name="item-type" value="for-interior" checked>
+        <span>Аксессуар для интерьера</span>
+      </label>
+      <label class="form__option form__type">
+        <input type="radio" name="item-type" value="toy">
+        <span>Детская игрушка</span>
+      </label>
+
       <p class="form__heading form__heading--color">Цвет</p>
-        <label class="form__option form__color"><input type="checkbox" name="item-color" value="white" checked><p>Белый</p></label>
-        <label class="form__option form__color"><input type="checkbox" name="item-color" value="grey" checked><p>Серый</p></label>
-        <label class="form__option form__color"><input type="checkbox" name="item-color" value="tiffany"><p>«Тиффани»</p></label>
-        <label class="form__option form__color"><input type="checkbox" name="item-color" value="black"><p>Черный</p></label>
-        <label class="form__option form__color"><input type="checkbox" name="item-color" value="pink"><p>Розовый</p></label>
-        <label class="form__option form__color"><input type="checkbox" name="item-color" value="orange"><p>Оранжевый</p></label>
+      <label class="form__option form__color">
+        <input type="checkbox" name="item-color" value="white" checked>
+        <span>Белый</span>
+      </label>
+      <label class="form__option form__color">
+        <input type="checkbox" name="item-color" value="grey" checked>
+        <span>Серый</span>
+      </label>
+      <label class="form__option form__color">
+        <input type="checkbox" name="item-color" value="tiffany">
+        <span>«Тиффани»</span>
+      </label>
+      <label class="form__option form__color">
+        <input type="checkbox" name="item-color" value="black">
+        <span>Черный</span>
+      </label>
+      <label class="form__option form__color">
+        <input type="checkbox" name="item-color" value="pink">
+        <span>Розовый</span>
+      </label>
+      <label class="form__option form__color">
+        <input type="checkbox" name="item-color" value="orange">
+        <span>Оранжевый</span>
+      </label>
+
       <p class="form__heading form__heading--name">ФИО</p>
-        <label class="form__option form__name"><p>Имя:</p><input type="text" name="buyer-name" placeholder="Введите ваше имя*" required></label>
-        <label class="form__option form__name"><p>Фамилия:</p><input type="text" name="buyer-name" placeholder="Укажите фамилию*" required></label>
-        <label class="form__option form__name"><p>Отчество:</p><input type="text" name="buyer-name" placeholder="Отчество, если желаете"></label>
+      <label class="form__option form__name">
+        <span>Имя:</span>
+        <input type="text" name="buyer-name" placeholder="Введите ваше имя*" required>
+      </label>
+      <label class="form__option form__name">
+        <span>Фамилия:</span><input type="text" name="buyer-name" placeholder="Укажите фамилию*" required>
+      </label>
+      <label class="form__option form__name">
+        <span>Отчество:</span>
+        <input type="text" name="buyer-name" placeholder="Отчество, если желаете">
+      </label>
+
       <p class="form__heading form__heading--phone">ТЕЛ</p>
-        <input class="form__phone" type="tel" name="buyer-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+      <input class="form__phone" type="tel" name="buyer-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+
       <p class="form__heading form__heading--mail">E-MAIL</p>
-        <input class="form__mail" type="email" name="buyer-mail" placeholder="Ваш Email*" required>
+      <input class="form__mail" type="email" name="buyer-mail" placeholder="Ваш Email*" required>
+
       <p class="form__heading form__heading--additional">ДОП</p>
-        <input class="form__wishes" type="textarea" name="buyer-wishes" placeholder="Опишите все ваши пожелания к заказу">
+      <input class="form__wishes" type="textarea" name="buyer-wishes" placeholder="Опишите все ваши пожелания к заказу">
+
       <p class="form__comment">*Поля обязательны для заполнения</p>
       <input class="form__submit" type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
     </form>
