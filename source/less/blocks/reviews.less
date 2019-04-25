@@ -1,0 +1,72 @@
+.reviews{
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  background: url(../img/bg-zigzag-line.svg) 10px 650px repeat-x;
+  background-size: auto 6px;
+  min-height: 655px;
+}
+.reviews__headline{
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  display: flex;
+}
+.reviews__message{
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  margin: 0;
+}
+.reviews__author{
+  margin: 23px 0 10px;
+  font-size: 17px;
+  line-height: 30px;
+  color: #444444;
+}
+.reviews__author-name{
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.reviews__contact{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 20px;
+    color: #444444;
+    font-weight: bold;
+    padding: 14px 0;
+    text-align: center;
+    border: 2px solid #444444;
+    margin: 26px 0 0;
+    &:hover{
+      background: #444444;
+      color: white;
+    }
+    &:active{
+      color: #8d8d8d;
+    }
+}
+.reviews__page{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0 10px;
+}
+.reviews__change-page--prev,
+.reviews__change-page--next{
+  max-width: 50px;
+  border: 1px solid #ececec;
+  padding: 12px 42px 7px 37px;
+  margin: 0;
+  &:hover{
+    fill: #666666;
+  }
+  &:active{
+    fill: #b2b2b2;
+  }
+  &:last-child{
+    border-left: none;
+  }
+}
