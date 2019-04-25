@@ -1,24 +1,33 @@
 .social{
   display: flex;
   flex-direction: row;
-  padding: 0;
-  margin: 0;
+  padding: 0 0 0 40px;
+  margin: 0 auto;
   height: 80px;
+  width: 68.75%;
   border-bottom: 1px solid #e5e5e5;
   list-style: none;
 }
-
-.social__link{
+.social__item{
   display: flex;
+  width: 60px;
+  margin: auto 0;
+}
+.social__link{
+  margin: 0 auto;
   &:hover svg{fill: #46c1ae;}
   &:active svg{fill: #bde3dd;}
 }
-.social__link--instagram{
-  margin: 30px 0 30px 57px;
-}
-.social__link--facebook{
-  margin: 25px 0 27px 41px;
-}
-.social__link--twitter{
-  margin: 30px 0 30px 40px;
+
+@media (min-width: @tablet-width) {
+  .social{
+    width: 180px;
+    border: none;
+    margin: 51px auto;
+    padding: 0;
+    height: auto;
+  }
+  .social__item{
+    margin: auto;
+  }
 }

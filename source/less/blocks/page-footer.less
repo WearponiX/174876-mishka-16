@@ -1,8 +1,26 @@
 .page-footer{
+  margin: 0 -30px;
   display: flex;
   flex-direction: column;
-  width: 260px;
   min-height: 160px;
-  padding: 0 30px;
   background: #f1f1f1;
+}
+.page-footer__logo{
+  display: none;
+}
+@media (min-width: @tablet-width) {
+  .page-footer__logo{
+    display: flex;
+    height: 35px;
+    margin: 51px 142px 0 50px;
+  }
+  .page-footer__logo svg{
+    &:hover{fill: #666666;}
+    &:active{fill: #b2b2b2;}
+  }
+  .page-footer{
+    margin: 0 -50px;
+    flex-direction: row;
+    min-height: 140px;
+    }
 }

@@ -5,11 +5,18 @@
   flex-direction: row;
   font-weight: bold;
   font-size: 19px;
-  margin: 22px 0 36px 37px;
+  width: 56.25%;
+  margin: 22px auto 36px;
   &:hover svg{fill: #46c1ae;}
   &:active{color: #bfbfbf}
   &:active svg{fill: #bde3dd;}
 }
 .page-footer__copyright svg{
-  padding: 0 0 0 30px;
+  padding: 0 0 0 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__copyright{
+    margin: 56px 50px 51px 62px;
+  }
 }
