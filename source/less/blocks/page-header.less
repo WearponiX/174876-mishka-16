@@ -2,19 +2,14 @@
   margin: 0 -30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
-}
-.page-header__top-menu{
-  display: flex;
-  flex-direction: row;
 }
 .page-header__logo {
   width: 240px;
   height: 35px;
   padding: 22px 0px;
-  display: flex;
+  display: block;
 }
 .page-header__logo  svg {
   margin: 0 0 0 48%;
@@ -22,19 +17,48 @@
   &:hover{fill: #666666;}
   &:active{fill: #b2b2b2;}
 }
-.page-header__nav-toggle{
-  border: none;
-  background: #000000;
+.main-nav--closed{
+  display: none;
+}
+.main-nav--nojs,
+.main-nav--opened{
+  display: block;
+}
+.nav-toggle{
   display: flex;
-  width: 20px;
-  height: 2px;
-  margin: 38px 31px 28px 29px;
-  &::before{
-    display: block;
+  border: none;
+  background: #ffffff;
+  padding: 30px 30px 49px;
+  height: 14px;
+  margin: -80px 0 0 240px;
+}
+.nav-toggle--open::before{
+    content: "";
     width: 20px;
     height: 2px;
-    background: #000000;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+.nav-toggle--close{
+  padding: 40px 25px;
+  &::before,
+  &::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #000000;
   }
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+  &::after {
+    margin: 0 0 0 -30px;
+    transform: rotate(-45deg);
+  }
+}
+.main-nav--nojs .nav-toggle{
+  display: none;
 }
 .site-list{
   margin: 0px;
@@ -42,8 +66,7 @@
   list-style: none;
 }
 .site-list__item {
-  border-bottom: 1px solid #ececec;
-    &:last-child{border: none}
+  border-top: 1px solid #ececec;
 }
 .site-list__item a{
   display: flex;

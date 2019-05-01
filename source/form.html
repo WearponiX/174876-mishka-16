@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <title>Mishka</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
 </head>
 <body>
-  <div class="container">
+<div class="container">
   <header class="page-header">
-    <section class="page-header__top-menu">
     <a class="page-header__logo" href="index.html">
       <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85.589px" height="35.034px" viewBox="32.458 20.216 85.589 35.034" enable-background="new 32.458 20.216 85.589 35.034" xml:space="preserve">
       <g>
@@ -26,11 +26,9 @@
       </g>
       </svg>
     </a>
-    <button class="page-header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    </section>
-    <nav class="main-nav main-nav--closed">
-      <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
+    <nav class="main-nav main-nav--nojs">
+      <button class="page-header__nav-toggle nav-toggle nav-toggle--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__site-list site-list site-list--closed site-list--nojs">
         <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
         <li class="site-list__item"><a href="#">Вязание на заказ</a></li>
         <li class="site-list__item">
@@ -47,7 +45,6 @@
           Корзина: пока пуста</a>
         </li>
       </ul>
-    </div>
     </nav>
   </header>
   <main class="page-main">
