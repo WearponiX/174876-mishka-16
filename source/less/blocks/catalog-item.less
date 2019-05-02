@@ -1,42 +1,99 @@
 .catalog-item{
+  margin: 0 0 30px;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  margin: 30px 0 0;
   border: 1px solid #ededed;
 }
 .catalog-item__link{
+  margin: 0;
+  padding: 0;
   text-decoration: none;
 }
+
+.catalog-item__description {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
 .catalog-item__headline {
-  margin: 22px auto 6px;
-  width:200px;
+  display: block;
+  margin: 0 auto 21px;
+  padding: 30px 0 0;
+  width: 240px;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
 }
-
-.catalog-item__description {
+.catalog-item__size {
+  margin: 0 0 21px 27px;
+  padding: 0;
   font-weight: normal;
   font-size: 13px;
   line-height: 30px;
-  margin: 0 0 0 27px;
-  padding: 0 0 18px;
-  width: 200px;
-  border-bottom: 1px solid #ececec;
 }
-
+.catalog-item__photo img{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
 .catalog-item__price {
+  margin: 0 0 23px 27px;
+  padding: 27px 0 0;
+  position: relative;
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
-  padding: 7px 0 12px 28px;
+  margin-top: auto;
+  border-top: 1px solid #ececec;
 }
-
 .catalog-item__buy {
-  margin: 0px;
-  padding: 0px;
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  top:28px;
+  right: 30px;
 }
 .catalog-item__buy path {
   fill: #d9d9d9;
+}
+@media (min-width: @tablet-width) {
+  .catalog-item{
+    display: flex;
+    flex-direction: row;
+  }
+  .catalog-item__description {
+    justify-content: space-between;
+    align-content: flex-end;
+    margin: 0 30px;
+  }
+  .catalog-item__headline {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+  }
+  .catalog-item__size {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .catalog-item__price {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .catalog-item{
+    flex-direction: column;
+  }
+  .catalog-item__size {
+    margin: 0 0 21px 0;
+  }
+  .catalog-item__price {
+    margin: 0 0 23px 0;
+  }
 }
