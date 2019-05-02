@@ -39,7 +39,6 @@
     border-color: #ecf9f7;
   }
 }
-
 .contacts__map{
   display: flex;
   margin: 0 -30px;
@@ -62,5 +61,24 @@
   }
   &:active{
     color: #8d8d8d;
+  }
+}
+@media (min-width: @tablet-width) {
+  .contacts__headline{
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .contacts__data tbody{
+    flex-direction: row;
+  }
+
+}
+@media (min-width: @desktop-width) {
+  .contacts__headline{
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .contacts__data{
+    flex-direction: column;
   }
 }
