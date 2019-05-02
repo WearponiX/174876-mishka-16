@@ -1,6 +1,7 @@
 .reviews{
   display: flex;
   flex-direction: column;
+  width: 260px;
   padding: 0 30px;
   margin: 0 auto;
 }
@@ -74,8 +75,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 668px;
     height: 457px;
     padding: 0 50px;
+    margin: 0 auto;
     background: url(../img/review@1x.jpg) no-repeat;
   }
   .reviews__headline{
@@ -119,7 +122,15 @@
 }
 @media(min-width: @desktop-width){
   .reviews{
+    width: 875px;
     padding: 0 50px 0 175px;
+  }
+  .reviews__headline{
+    height: min-content;
+    order: 1;
+    font-size: 53px;
+    line-height: 57px;
+    margin: 70px 0 0;
   }
   .reviews__page{
     margin: 0 0 100px;
