@@ -1,7 +1,5 @@
 .about{
-  flex-direction: column;
-  width: 260px;
-  padding: 20px 30px 32px;
+  padding: 25px 0 32px;
 }
 .about__headline{
   font-size: 25px;
@@ -10,12 +8,118 @@
   display: flex;
   margin: 0;
 }
-.about__line{
+.page-main__about-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.about-list__item {
+  margin: 0;
+  padding: 0;
+  position: relative;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   padding: 83px 0 0;
   margin: 0;
   width: 250px;
-  //background: url();
+}
+.about-list__item--eco::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 8px;
+  width: 32px;
+  height: 37px;
+  background: url(../img/icon-feature-flower.svg) no-repeat;
+  background: #63d1bb;
+}
+.about-list__item--scandinavian::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 47px;
+  height: 27px;
+  background: url(../img/icon-feature-money.svg) no-repeat;
+  background: #63d1bb;
+}
+.about-list__item--like::before {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: 8px;
+  width: 34px;
+  height: 27px;
+  background: url(../img/icon-feature-heart.svg) no-repeat;
+  background: #63d1bb;
+}
+.about-list__item--handmade::before {
+  content: "";
+  position: absolute;
+  top: 33px;
+  left: 4px;
+  width: 35px;
+  height: 34px;
+  background: url(../img/icon-feature-ball.svg) no-repeat;
+  background: #63d1bb;
+}
+.about-list__item--support::before {
+  content: "";
+  position: absolute;
+  top: 34px;
+  left: -6px;
+  width: 55px;
+  height: 23px;
+  background: url(../img/icon-feature-rocket.svg) no-repeat;
+  background: #63d1bb;
+}
+.about-list__item--present::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 3px;
+  width: 33px;
+  height: 32px;
+  background: url(../img/icon-feature-gift.svg) no-repeat;
+  background: #63d1bb;
+}
+@media (min-width: @tablet-width) {
+  .about{
+    padding: 0;
+    height: min-content;
+  }
+  .page-main__about-list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 440px;
+  }
+  .about__headline{
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: bold;
+  }
+  .about-list__item {
+    width: 350px;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-main__about-list {
+    height: 500px;
+  }
+    .about__headline{
+    font-size: 53px;
+    line-height: 57px;
+    font-weight: bold;
+  }
+    .about-list__item {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+  }
 }

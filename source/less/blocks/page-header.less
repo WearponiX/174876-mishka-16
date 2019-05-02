@@ -1,46 +1,100 @@
 .page-header {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  justify-content: space-between;
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
 }
-.page-header__top-menu{
-  display: flex;
-  flex-direction: row;
-}
 .page-header__logo {
-  width: 240px;
-  height: 35px;
-  padding: 22px 0px;
+  padding: 20px 0px;
   display: flex;
 }
-.page-header__logo  svg {
-  margin: 0 0 0 48%;
+.page-header__logo  picture {
+  margin: auto;
+//  &:hover{fill: #666666;}
+//  &:active{fill: #b2b2b2;}
+}
+//стили для навигации и скрытия
+.main-nav--closed .site-list,
+.main-nav--closed .user-list{
+  display: none;
+}
+.main-nav--nojs,
+.main-nav--opened{
   display: block;
-  &:hover{fill: #666666;}
-  &:active{fill: #b2b2b2;}
 }
-.page-header__nav-toggle{
-  border: none;
-  background: black;
+.nav-toggle{
   display: flex;
-  width: 20px;
-  height: 2px;
-  margin: 38px 31px 28px 29px;
+  border: none;
+  background: #ffffff;
+  padding: 30px 30px 50px;
+  height: 14px;
+  margin: -80px 0 0 240px;
 }
-.site-list{
+.main-nav--closed .nav-toggle::before{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+.main-nav--opened .nav-toggle{
+  padding: 40px 25px;
+  &::before,
+  &::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #000000;
+  }
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+  &::after {
+    margin: 0 0 0 -30px;
+    transform: rotate(-45deg);
+  }
+}
+.main-nav--nojs .nav-toggle{
+  display: none;
+}
+.main-nav--closed .page-header__logo,
+.main-nav--closed .page-header__nav-toggle{
+  display: flex;
+}
+//конец стилей для навигации и скрытия
+.main-nav__wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.site-list,
+.user-list,
+.offer-list{
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
-.site-list__item {
-  border-bottom: 1px solid #ececec;
-    &:last-child{border: none}
+.nav-note{
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #444444;
 }
-.site-list__item a{
+.offer-list,
+.nav-note{
+    display: none;
+}
+.site-list__item,
+.user-list__item {
+  border-top: 1px solid #ececec;
+}
+.site-list__item a,
+.user-list__item a,
+.offer-list__item a{
   display: flex;
-  padding: 26px 0 28px 73px;
+  padding: 25px 0 28px 75px;
   text-decoration: none;
   font-size: 17px;
   line-height: 24px;
@@ -48,17 +102,91 @@
   color: #000000;
   cursor: pointer;
 }
-.site-list__search path,
-.site-list__cart path {
+.user-list__item path {
   fill: #d3d2d2;
 }
-.site-list__search svg {
+.user-list__search svg {
   margin-left: -42px;
   margin-top: 7px;
   position: absolute;
 }
-.site-list__cart svg {
+.user-list__cart svg {
   margin-left: -44px;
   margin-top: 5px;
   position: absolute;
+}
+@media (min-width: @tablet-width) {
+  .main-nav{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .page-header__logo{
+    padding: 0;
+    margin: 22px 0 0;
+  }
+  .page-header{
+    flex-direction: row;
+  }
+  .main-nav .nav-toggle{
+    display: none;
+  }
+  .main-nav__wrapper{
+  }
+  .main-nav .site-list,
+  .main-nav .user-list{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+  }
+  .user-list{
+    order: 1;
+    flex-grow: 1;
+  }
+  .site-list{
+    order: 2;
+  }
+  .user-list span{
+    display: none;
+  }
+  .site-list__item,
+  .user-list__item{
+    border: none;
+  }
+  .site-list__item a{
+    padding: 0;
+    margin: 25px 40px 25px 0;
+    font-size: 15px;
+  }
+  .nav-note{
+    order: 3;
+    display: flex;
+  }
+
+}
+@media (min-width: @desktop-width) {
+  .site-list{
+    order: 1;
+  }
+  .page-header__logo{
+    order: 2;
+    margin: 10px auto;
+  }
+  .user-list{
+    order: 3;
+  }
+  .offer-list{
+    order: 4;
+    display: flex;
+  }
+  .nav-note{
+    order: 5;
+  }
+  .offer-list a{
+    padding: 0;
+    margin: 25px 60px 25px 0;
+    font-size: 15px;
+  }
 }
