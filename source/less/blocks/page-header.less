@@ -8,11 +8,14 @@
   padding: 20px 0px;
   display: flex;
 }
-.page-header__logo  picture {
+.page-header__logo  picture{
   margin: auto;
+  width: 86px;
+  height: 35px;
 //  &:hover{fill: #666666;}
 //  &:active{fill: #b2b2b2;}
 }
+
 //стили для навигации и скрытия
 .main-nav--closed .site-list,
 .main-nav--closed .user-list{
@@ -85,6 +88,7 @@
 .nav-note{
     display: none;
 }
+.site-list__item,
 .user-list__item {
   border-top: 1px solid #ececec;
 }
@@ -128,6 +132,10 @@
   .page-header__logo{
     padding: 0;
     margin: 5px 0 0;
+  }
+  .page-header__logo img{
+    width: 113px;
+    height: 46px;
   }
   .page-header{
     flex-direction: row;
@@ -180,6 +188,10 @@
   .page-header__logo{
     order: 2;
     margin: 10px auto;
+  }
+  .page-header__logo img{
+    width: 148px;
+    height: 73px;
   }
   .user-list{
     order: 3;

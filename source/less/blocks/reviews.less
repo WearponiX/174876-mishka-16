@@ -71,16 +71,26 @@
 }
 @media(min-width: @tablet-width){
   .reviews{
-    position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 668px;
-    height: 457px;
-    padding: 0 50px;
-    margin: 0 auto;
-    background: url(../img/review@1x.jpg) no-repeat;
-  }
+      position: relative;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 668px;
+      height: 457px;
+      padding: 0 50px;
+      margin: 0 auto;
+
+      background-image: url(../img/review@1x.jpg);
+      background-repeat: no-repeat;
+      background-size: 350px 457px;
+      @media (min-resolution: @retina-dpi),
+           (min-resolution: @retina-dppx) {
+              background-image:  url(../img/review@2x.jpg);
+              background-size: 350px  457px;
+              }
+
+    }
+
   .reviews__headline{
     height: min-content;
     order: 1;

@@ -84,10 +84,15 @@
 					<td>15 см</td>
 				</tr>
 			</table>
-			<picture class="item__photo">
-				<source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
-				<source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg"> <img src="img/triple-set-mobile@1x.jpg" alt="Фото товара"> </picture>
-			<p class="item__price">Цена: 990 руб.</p> <a class="item__buy" href="#">Заказать</a> </section> <span class="page-main__line--grey page-main__line--item"></span>
+      <picture>
+  				<source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+  				<source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img  class="item__photo" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фото товара">
+        </picture>
+			<p class="item__price">Цена: 990 руб.</p>
+      <a class="item__buy" href="#">Заказать</a>
+    </section>
+    <span class="page-main__line--grey page-main__line--item"></span>
 		<div class="container">
 			<section class="page-main__about about">
 				<h3 class="about__headline">Коротко о нас:</h3>
