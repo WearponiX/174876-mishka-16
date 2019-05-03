@@ -1,13 +1,18 @@
 body {
-  min-width: 320px;
-  width: 320px;
-  margin: 0px auto;
+  display: block;
+  margin: 0;
   padding: 0;
   font-family: @font-family;
-  background-color: #ffffff;
 }
-.container {
+.page-header .container,
+.page-header{
+  width: 320px;
+  padding: 0;
+}
+.container{
   margin: 0 auto;
+  padding: 0 30px;
+  width: 260px;
 }
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -32,4 +37,26 @@ body {
   font-family: "Open Sans";
   font-style: normal;
   src: url("fonts/opensansbold.woff2") format("woff2"), url("fonts/opensansbold.woff") format("woff");
+}
+
+@media (min-width: @tablet-width) {
+.page-header{
+  width: @tablet-width;
+}
+.page-header .container,
+.container{
+  padding: 0 50px;
+  width: calc(@tablet-width - 100px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+.page-header{
+  width: @desktop-width;
+}
+.page-header .container,
+.container{
+  padding: 0 50px;
+  width: calc(@desktop-width - 100px);
+  }
 }

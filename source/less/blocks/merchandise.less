@@ -1,18 +1,24 @@
 .merchandise{
-  list-style: none;
-  margin: 0;
+  display: flex;
   padding: 0;
+  margin: 0;
+  flex-direction: column;
+  list-style: none;
 }
 .merchandise__item{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   height: 103px;
-  &:hover{height: 108px;}
+  &:hover{
+    height: 108px;
+    margin: -5px 0 0;
+  }
 }
 .merchandise__item a{
   display: flex;
   padding: 24px 0 31px 30px;
-  width: 160px;
+  max-width: 150px;
   font-size: 19px;
   font-weight: 700;
   line-height: 24px;
@@ -26,7 +32,7 @@
   &:active svg{fill: #44c0aa}
 }
 .merchandise__lamp svg{
-  padding: 22px 0 0px 53px;
+  padding: 22px 36px 0 0;
   fill: #3bb09d;
 }
 .merchandise__brick{
@@ -36,6 +42,21 @@
   &:active svg{fill: #37b2a0}
 }
 .merchandise__brick svg{
-  padding: 21px 0 0px 43px;
+  padding: 21px 27px 0 0;
   fill: #35a999;
+}
+@media (min-width: @tablet-width){
+  .merchandise{
+    flex-direction: row;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .merchandise__item{
+    width: 50%;
+    height: 120px;
+    &:hover{
+      height: 125px;
+      margin: -5px 0 0;
+    }
+  }
 }
