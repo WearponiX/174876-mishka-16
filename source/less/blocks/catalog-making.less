@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   border:1px solid #ececec;
-  margin-bottom: 58px;
+  margin: 0 0 58px;
 }
 .catalog-making__headline-container {
   margin: 0;
@@ -13,19 +13,16 @@
 .catalog-making__headline-container svg {
   display: block;
   position: absolute;
-  top: 40px;
-  left: 20px;
+  top: 30px;
+  left: 34px;
 }
 .catalog-making__headline-container path{
   fill: #63d1bb;
 }
 .catalog-making__headline {
+  width: 170px;
   margin: 0px;
-  padding: 0px;
-  padding-left: 90px;
-  padding-top: 40px;
-  padding-right: 70px;
-  padding-bottom: 40px;
+  padding: 25px 0 25px 90px;
   font-family: "OpenSans",sans-serif;
   font-weight: bold;
   font-size: 17px;
@@ -37,7 +34,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .catalog-making__video-button{
   display: block;
@@ -46,8 +43,8 @@
   background-color: transparent;
   outline: none;
   position: absolute;
-  top: 35px;
-  left: 78px;
+  top: 34px;
+  left: 74px;
 }
 .catalog-making__video svg {
   position: absolute;
@@ -55,9 +52,8 @@
   left:80px;
 }
 .catalog-making__description {
-  padding-right: 37px;
-  padding-left: 33px;
-  margin-bottom: 32px;
+  padding: 0 37px 0 33px;
+  margin: 0 0 25px;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -67,7 +63,7 @@
 .catalog-making__buy {
   display: block;
   margin: 0px 34px 32px;
-  padding: 17px 4px;
+  padding: 16px 0;
   text-decoration: none;
   font-weight: bold;
   font-size: 17px;
@@ -86,28 +82,35 @@
   }
 }
 @media (min-width: @tablet-width) {
+  .catalog-making{
+    margin: 0 0 65px;
+  }
   .catalog-making__headline-container svg {
-    top: 30px;
-    left: 20px;
+    top: 27px;
+    left: 41px;
   }
   .catalog-making__video-button{
-    top: 190px;
-    left: 280px;
+    top: 185px;
+    left: 275px;
   }
-
   .catalog-making__video {
     order: -1;
+    padding: 0;
   }
   .catalog-making__headline {
-    font-weight: bold;
     font-size: 20px;
-    line-height: 24px;
+    width: auto;
+    padding: 32px 0 32px 105px;
   }
   .catalog-making__description {
+    padding: 0 45px 10px 40px;
     font-weight: 400;
     font-size: 15px;
-    line-height: 24px;
-    }
+    line-height: 30px;
+  }
+  .catalog-making__buy {
+    margin: 0 40px 45px;
+  }
 }
 @media (min-width: @desktop-width) {
   .catalog-making {

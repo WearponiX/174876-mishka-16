@@ -19,16 +19,17 @@
 }
 .catalog-item__headline {
   display: block;
-  margin: 0 auto 21px;
-  padding: 30px 0 0;
-  width: 240px;
+  margin: 0 auto 5px;
+  padding: 25px 0 0 0;
+  width: 200px;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  text-align: left;
   color: #000000;
 }
 .catalog-item__size {
-  margin: 0 0 21px 27px;
+  margin: 0 0 21px 30px;
   padding: 0;
   font-weight: normal;
   font-size: 13px;
@@ -40,8 +41,8 @@
   padding: 0;
 }
 .catalog-item__price {
-  margin: 0 0 23px 27px;
-  padding: 27px 0 0;
+  margin: 0 30px 27px;
+  padding: 20px 0 0;
   position: relative;
   font-weight: bold;
   font-size: 15px;
@@ -53,14 +54,15 @@
   position: absolute;
   width: 21px;
   height: 20px;
-  top:28px;
-  right: 30px;
+  top:20px;
+  right: -5px;
 }
 .catalog-item__buy path {
   fill: #d9d9d9;
 }
 @media (min-width: @tablet-width) {
   .catalog-item{
+    margin: 0 0 50px;
     display: flex;
     flex-direction: row;
   }
@@ -70,12 +72,15 @@
     margin: 0 30px;
   }
   .catalog-item__headline {
+    width: 230px;
+    padding: 25px 45px 0 0;
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
     color: #000000;
   }
   .catalog-item__size {
+    margin: 0 0 auto;
     font-weight: normal;
     font-size: 15px;
     line-height: 30px;
@@ -84,7 +89,13 @@
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
+    margin: 0 0 27px;
+    padding: 22px 0 0 2px;
   }
+  .catalog-item__buy {
+    right: 3px;
+  }
+
 }
 @media (min-width: @desktop-width) {
   .catalog-item{

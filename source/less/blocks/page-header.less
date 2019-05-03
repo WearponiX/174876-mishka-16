@@ -3,7 +3,6 @@
   width: 100%;
   flex-direction: column;
   border-top: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
 }
 .page-header__logo {
   padding: 20px 0px;
@@ -27,7 +26,7 @@
   display: flex;
   border: none;
   background: #ffffff;
-  padding: 30px 30px 50px;
+  padding: 31px 30px 48px;
   height: 14px;
   margin: -80px 0 0 240px;
 }
@@ -37,10 +36,10 @@
     width: 20px;
     height: 2px;
     background-color: #000000;
-    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+    box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
 }
 .main-nav--opened .nav-toggle{
-  padding: 40px 25px;
+  padding: 37px 25px 41px;
   &::before,
   &::after {
     content: "";
@@ -86,7 +85,6 @@
 .nav-note{
     display: none;
 }
-.site-list__item,
 .user-list__item {
   border-top: 1px solid #ececec;
 }
@@ -94,7 +92,7 @@
 .user-list__item a,
 .offer-list__item a{
   display: flex;
-  padding: 25px 0 28px 75px;
+  padding: 26px 0 28px 75px;
   text-decoration: none;
   font-size: 17px;
   line-height: 24px;
@@ -102,17 +100,21 @@
   color: #000000;
   cursor: pointer;
 }
+.user-list__item a{
+  padding: 32px 0 34px 83px;
+}
+
 .user-list__item path {
   fill: #d3d2d2;
 }
 .user-list__search svg {
-  margin-left: -42px;
-  margin-top: 7px;
+  margin-left: -49px;
+  margin-top: 6px;
   position: absolute;
 }
 .user-list__cart svg {
-  margin-left: -44px;
-  margin-top: 5px;
+  margin-left: -51px;
+  margin-top: 4px;
   position: absolute;
 }
 @media (min-width: @tablet-width) {
@@ -125,7 +127,7 @@
   }
   .page-header__logo{
     padding: 0;
-    margin: 22px 0 0;
+    margin: 5px 0 0;
   }
   .page-header{
     flex-direction: row;
@@ -144,6 +146,7 @@
   .user-list{
     order: 1;
     flex-grow: 1;
+    min-height: 90px;
   }
   .site-list{
     order: 2;
@@ -151,24 +154,28 @@
   .user-list span{
     display: none;
   }
-  .site-list__item,
   .user-list__item{
     border: none;
+    border-left:  1px solid #ececec;
   }
   .site-list__item a{
     padding: 0;
-    margin: 25px 40px 25px 0;
+    margin: 17px 35px 25px 0;
     font-size: 15px;
   }
   .nav-note{
     order: 3;
     display: flex;
+    padding: 2px 0 0;
   }
 
 }
 @media (min-width: @desktop-width) {
   .site-list{
     order: 1;
+  }
+  .site-list__item a{
+    font-size: 17px;
   }
   .page-header__logo{
     order: 2;
