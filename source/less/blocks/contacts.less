@@ -8,7 +8,7 @@
   line-height: 30px;
   font-weight: bold;
   display: flex;
-  margin: 0 0 25px;
+  margin: 0 0 26px;
 }
 .contacts__data{
   font-size: 15px;
@@ -52,7 +52,7 @@
   padding: 14px 0;
   text-align: center;
   border: 2px solid #444444;
-  margin: 38px 0 39px;
+  margin: 33px 0 39px;
   &:hover{
     background: #444444;
     color: white;
@@ -61,6 +61,11 @@
     color: #8d8d8d;
   }
 }
+.map__photo {
+  width: 322px;
+  height: 457px;
+}
+
 @media (min-width: @tablet-width) {
   .contacts{
     padding: 0;
@@ -68,13 +73,14 @@
   .contacts__headline{
     font-size: 43px;
     line-height: 50px;
-    margin: 0;
-    padding: 60px 0;
+    margin: 0 0 0 -5px;
+    padding: 60px 0 47px;
     background: url('../img/icon-flag.svg') no-repeat;
-    background-position: 620px 40px;
+    background-position: 623px 46px;
   }
   .contacts__data{
-    margin: 0 0 60px;
+    font-size: 17px;
+    margin: 0 31px 55px -3px;
   }
   .contacts__data tbody{
     width: 100%;
@@ -85,14 +91,23 @@
   .contacts__data tr{
     display: inline-block;
   }
+  .contacts__data td{
+    min-width: 75px;
+  }
   .contacts__map{
     margin: 0 -50px;
     width: 768px;
   }
   .contacts__contact{
+    font-size: 17px;
     width: 230px;
-    margin: 55px auto;
+    margin: 50px auto 60px;
   }
+  .map__photo {
+    width: 768px;
+    height: 457px;
+  }
+
 }
 @media (min-width: @desktop-width) {
   .contacts{
@@ -130,4 +145,9 @@
     order: 2;
     margin: 0;
   }
+  .map__photo {
+    width: 525px;
+    height: 457px;
+  }
+
 }
