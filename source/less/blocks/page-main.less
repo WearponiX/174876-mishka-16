@@ -8,7 +8,8 @@
   margin: 0 auto;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #f1f1f1;
+  background-color: #f9f9f9;
+
   background-image:  url(../img/hero-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: -125px 0px;
@@ -19,6 +20,7 @@
     background-size: 575px 373px;
   }
 }
+
 .page-main__wrapper--grey{
   width: 100%;
   background: #f1f1f1;
@@ -68,18 +70,23 @@
   }
   .page-main__wrapper{
     display: flex;
-    width: 668px;
+    width: auto;
+
     height: 747px;
     padding: 0 50px;
     background-image: url(../img/hero-tablet@1x.jpg);
     background-repeat: no-repeat;
-    background-position: -190px 0;
+
+    background-position: 50% 0;
+    background-color: #f9f9f9;
+
     background-size: 1150px auto;
   @media (min-resolution: @retina-dpi),(min-resolution: @retina-dppx) {
       background-image: url(../img/hero-tablet@2x.jpg);
       background-size: 1150px auto;
     }
 }
+
   .page-main__headline{
     margin: 153px auto 0;
     font-size: 43px;
@@ -117,12 +124,13 @@
 }
 @media (min-width: @desktop-width) {
   .page-main__headline{
-    margin: 162px auto;
+    margin: 153px auto 360px;
     width: 700px;
     font-size: 53px;
     line-height: 57px;
   }
   .page-main__wrapper{
+
       display: flex;
       width: 1050px;
       padding: 0 50px;
@@ -138,7 +146,7 @@
   }
 
   .page-main__wrapper--grey .page-main__headline{
-    padding: 100px 0 130px;
+    padding: 95px 0;
   }
 
   .page-main__line--white{
@@ -150,10 +158,10 @@
     background-size: auto 23px;
   }
   .page-main__line--item{
-    margin: 75px 0 60px;
+    margin: 75px 0 57px;
   }
   .page-main__line--reviews{
-    margin: 60px 0 70px;
+    margin: 70px 0;
   }
   .page-main__item-list{
     flex-direction: row;
