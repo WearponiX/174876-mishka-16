@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Mishka</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9d0c2bb5-7d3c-417c-bf11-7ef9e29ec358"></script>
   <script src="js/script.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -150,14 +151,14 @@
               <br> д. 19/8, офис 101</td>
           </tr>
         </table>
-        <div class="contacts__map">
-          <!--вставлю карту с яндекс карт через api -->
+        <div class="contacts__map contacts__map--nojs" id="map">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
             <img src="img/map-mobile@1x.jpg" alt="Фото карты">
           </picture>
-        </div> <a class="contacts__contact" href="#">Напишите нам</a>
+        </div>
+        <a class="contacts__contact" href="#">Напишите нам</a>
       </section>
     </div>
   </main>
