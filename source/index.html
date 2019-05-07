@@ -26,7 +26,7 @@
         <button class="page-header__nav-toggle nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__site-list site-list">
           <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="site-list__item"><a href="#">Вязание на заказ</a></li>
+          <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
         </ul>
         <ul class="main-nav__user-list user-list">
           <li class="user-list__item">
@@ -57,15 +57,20 @@
     <div class="page-main__wrapper">
       <h1 class="page-main__headline page-main__headline--index">Милые штуки ручной<br> работы для дома</h1>
       <ul class="page-main__merchandise merchandise">
-        <li class="merchandise__item merchandise__lamp"><a href="#">Предметы интерьера</a>
-          <svg class="merchandise__item-icon--lamp" width="41" height="63">
+        <li class="merchandise__item merchandise__lamp">
+          <a href="#">
+            <p>Предметы интерьера</p>
+            <svg class="merchandise__item-icon--lamp" width="41" height="63">
             <use xlink:href="#icon-interior"></use>
-          </svg>
+            </svg>
+          </a>
         </li>
-        <li class="merchandise__item merchandise__brick"><a href="#">Детские игрушки</a>
+        <li class="merchandise__item merchandise__brick"><a href="#">
+          <p>Детские игрушки</p>
           <svg class="merchandise__item-icon--brick" width="60" height="60">
             <use xlink:href="#icon-toy"></use>
           </svg>
+          </a>
         </li>
       </ul>
     </div> <span class="page-main__line--white"></span>
@@ -95,7 +100,7 @@
         <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
         <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-        <img class="item__photo" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фото товара">
+        <img class="item__photo" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="525" height="636" alt="Фото товара">
       </picture>
       <p class="item__price">Цена: 990 руб.</p>
       <a class="item__buy" href="#">Заказать</a>
@@ -121,13 +126,13 @@
         стильными, а также набирают больше лайков!</blockquote>
       <p class="reviews__author"><span class="reviews__author-name">Анастасия Красильникова</span> @misssssiskras</p>
       <div class="reviews__page">
-        <a class="reviews__change-page reviews__change-page--prev">
+        <a class="reviews__change-page reviews__change-page--prev" href="#">
           <p class="visually-hidden">Предыдущая страница</p>
           <svg class="reviews__change-icon--prev" width="50" height="27">
             <use xlink:href="#icon-left-arrow"></use>
           </svg>
         </a>
-        <a class="reviews__change-page reviews__change-page--next">
+        <a class="reviews__change-page reviews__change-page--next" href="#">
           <p class="visually-hidden">Следующая страница</p>
           <svg class="reviews__change-icon--next" width="50" height="27">
             <use xlink:href="#icon-right-arrow"></use>
@@ -209,7 +214,7 @@
       <div class="modal-window__size-block">
         <input type="radio" class="modal-window__radio" value="s" name="size" id="size-s" >
         <label class="modal-window__label" for="size-s">S</label>
-        <input type="radio" class="modal-window__radio" value="m" name="size" id="size-m"checked>
+        <input type="radio" class="modal-window__radio" value="m" name="size" id="size-m" checked>
         <label class="modal-window__label" for="size-m">M</label>
         <input type="radio" class="modal-window__radio" value="l" name="size" id="size-l">
         <label class="modal-window__label" for="size-l">L</label>

@@ -23,21 +23,13 @@
     width: min-content;
     height: 35px;
     margin: 51px 142px 0 0;
-  }
-  .social__link-icon--instagram,
-  .social__link-icon--facebook,
-  .social__link-icon--twitter{
-  &:hover{fill: #46c1ae;}
-  &:active{fill: #bde3dd;}
+    fill:#231f20;
+    &:hover,
+    &:focus svg{fill: #46c1ae;}
+    &:active svg{fill: #bde3dd;}
   }
 
 }
-.page-footer__logo svg {
-  fill:#231f20;
-  &:hover{fill: #46c1ae;}
-  &:active{fill: #bde3dd;}
-}
-
 @media (min-width: @desktop-width) {
   .page-footer .container{
     width: @desktop-width;

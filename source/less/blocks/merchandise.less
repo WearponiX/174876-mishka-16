@@ -6,28 +6,35 @@
   list-style: none;
 }
 .merchandise__item{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   height: 103px;
-  &:hover{
+  &:hover,
+  & a:focus{
     height: 108px;
     margin: -5px 0 0;
   }
 }
 .merchandise__item a{
+  width: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.merchandise__item p{
   padding: 24px 0 31px 30px;
+  margin: 0;
   max-width: 150px;
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
   color: white;
-  text-decoration: none;
 }
 .merchandise__lamp{
   background: #63d1bb;
-  &:hover{background: #59d5bc}
+  &:hover,
+  & a:focus{background: #59d5bc}
   &:active a{color: #97e2d2}
   &:active svg{fill: #44c0aa}
 }
@@ -37,7 +44,8 @@
 }
 .merchandise__brick{
   background: #56c3b2;
-  &:hover{background: #46c1ae}
+  &:hover,
+  & a:focus{background: #46c1ae}
   &:active a{color: #8dd5c9}
   &:active svg{fill: #37b2a0}
 }
@@ -54,12 +62,13 @@
   .merchandise__item{
     width: 50%;
     height: 120px;
-    &:hover{
+    &:hover,
+    & a:focus{
       height: 125px;
       margin: -5px 0 0;
     }
   }
-  .merchandise__item a{
+  .merchandise__item p{
     padding: 27px 0 31px 35px;
     font-size: 20px;
     line-height: 30px;

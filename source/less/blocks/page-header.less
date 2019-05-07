@@ -11,7 +11,8 @@
   width: 86px;
   height: 35px;
 
-  &:hover {
+  &:hover,
+  &:focus {
    opacity: 0.5;
   }
   &:active {
@@ -109,7 +110,7 @@
   font-weight: bold;
   color: #000000;
   cursor: pointer;
-  &:hover {
+  &:hover, &:focus {
     color: #8d8d8d;
   }
   &:active {
@@ -126,7 +127,7 @@
     position: absolute;
     fill: #d3d2d2;
   }
-  &:hover svg{
+  &:hover svg, &:focus svg{
     fill: #9ce2d4;
   }
   &:active svg{
@@ -140,7 +141,8 @@
     position: absolute;
     fill: #d3d2d2;
   }
-  &:hover svg{
+  &:hover svg
+  &:focus svg{
     fill: #9ce2d4;
   }
   &:active svg{

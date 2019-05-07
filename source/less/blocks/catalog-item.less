@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   border: 1px solid #ededed;
-
-  &:hover {
+  &:hover,
+  &:focus-within{
   box-shadow: 0px 9px 19px -12px rgba(0, 0, 0, 0.68);
   }
   &:active {
@@ -17,6 +17,14 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  color: #000000;
+  &:hover,
+  &:focus{
+    color: #8d8d8d;
+  }
+  &:active {
+    color: #cacaca;
+  }
 }
 .catalog-item__description {
   margin: 0;
@@ -33,13 +41,6 @@
   font-size: 17px;
   line-height: 24px;
   text-align: left;
-  color: #000000;
-  &:hover {
-    color: #8d8d8d;
-  }
-  &:active {
-    color: #cacaca;
-  }
 }
 .catalog-item__size {
   margin: 0 0 21px 30px;
@@ -73,10 +74,9 @@
   height: 20px;
   top:20px;
   right: -5px;
-}
-.catalog-item__buy svg {
   fill: #d9d9d9;
-  &:hover{fill: #63d1bb;}
+  &:hover,
+  &:focus{fill: #63d1bb;}
   &:active{fill: #d0f1ea;}
 }
 @media (min-width: @tablet-width) {
@@ -96,7 +96,6 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
-    color: #000000;
     &:last-child{
       padding: 30px 45px 0 0;
     }
