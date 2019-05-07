@@ -1,0 +1,148 @@
+.modal-window {
+  font-family: "Open Sans", "Arial", sans-serif;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-position: 0 0;
+  animation: bounce 0.6s;
+}
+
+.modal--close {
+  display: none;
+  animation: bounceOut 0.6s;
+}
+
+.modal-window__header {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 150px;
+  margin: 0;
+  padding-left: 88px;
+  text-align: center;
+  padding-top: 31px;
+}
+
+.modal-window__form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 320px;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%) translateY(-50%);
+  top: 50%;
+  height: 336px;
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+  box-shadow: 0 5px 10px 0 #c7c7c7;
+}
+
+.modal-window__description {
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  margin: 0;
+  padding-top: 11px;
+  padding-bottom: 24px;
+  padding-left: 93px;
+}
+
+.modal-window__size-block {
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.modal-window__radio {
+  display: none;
+}
+
+.modal-window__radio:checked + .modal-window__label {
+  border-color: #63d1bb;
+}
+
+.modal-window__label {
+  width: 78px;
+  height: 48px;
+  border: 2px solid #ececec;
+  color: #444444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
+
+  &:active {
+    border-color: #63d1bb;
+  }
+}
+
+.modal-window__button {
+  margin-top: 31px;
+  margin-left: 31px;
+  text-decoration: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  width: 260px;
+  height: 52px;
+  border: none;
+  background-color: #63d1bb;
+  color: white;
+  line-height: 16px;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce-down 0.6s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes bounceOut {
+  0% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(-10px);
+  }
+
+  90% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(-2000px);
+  }
+}

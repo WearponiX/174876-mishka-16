@@ -1,16 +1,18 @@
-.item{
+.item {
   display: flex;
   flex-direction: column;
   width: 260px;
   padding: 27px 0 35px;
   margin: auto;
 }
-.item__headline{
+
+.item__headline {
   font-size: 25px;
   line-height: 30px;
   margin: 0 0 5px;
 }
-.item__weekly{
+
+.item__weekly {
   color: #63d1bb;
   font-size: 17px;
   line-height: 20px;
@@ -18,42 +20,49 @@
   text-transform: uppercase;
   margin: 0;
 }
-.item__description{
+
+.item__description {
   font-size: 15px;
   line-height: 24px;
   color: #444444;
   margin: 24px 0 0;
 }
-.item__features{
+
+.item__features {
   margin: 35px 0 0;
   font-size: 15px;
   line-height: 20px;
   color: #444444;
   flex-direction: column;
 }
-.features__line{
+
+.features__line {
   display: flex;
   justify-content: flex-start;
   padding: 10px 0 8px;
   border-bottom: 1px solid #e5e5e5;
 }
-.features__line td{
+
+.features__line td {
   padding: 0;
   min-width: 95px;
 }
-.item__photo{
+
+.item__photo {
   margin: 27px 0 0;
   width: 260px;
   height: 315px;
 }
-.item__price{
+
+.item__price {
   font-size: 17px;
   line-height: 24px;
   color: #444444;
   font-weight: bold;
   margin: 20px auto 0;
 }
-.item__buy{
+
+.item__buy {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 17px;
@@ -63,17 +72,19 @@
   padding: 12px 83px;
   border: 2px solid #444444;
   margin: 26px 0 0;
-  &:hover{
+
+  &:focus,
+  &:hover {
     background: #444444;
     color: white;
   }
-  &:active{
+
+  &:active {
     color: #8d8d8d;
   }
 }
-
 @media (min-width: @tablet-width) {
-  .item{
+  .item {
     position: relative;
     margin: 0 auto;
     padding: 0 50px;
@@ -83,36 +94,42 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  .item__headings{
+
+  .item__headings {
     width: 100%;
     margin: 34px 0 47px -2px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  .item__headline{
+
+  .item__headline {
     display: flex;
     font-size: 43px;
     line-height: 50px;
     margin: 0;
   }
-  .item__weekly{
+
+  .item__weekly {
     width: 120px;
     height: 36px;
     padding: 8px 0;
     text-align: center;
   }
-  .item__description{
+
+  .item__description {
     font-size: 17px;
     line-height: 30px;
     margin: 0;
     max-width: 290px;
   }
-  .item__features{
+
+  .item__features {
     width: 290px;
     margin: 35px 0 0;
   }
-  .item__photo{
+
+  .item__photo {
     position: absolute;
     left: 385px;
     top: 141px;
@@ -120,17 +137,19 @@
     width: 333px;
     height: 404px;
   }
-  .item__price{
+
+  .item__price {
     margin: 56px 0 35px 72px;
     font-size: 20px;
   }
-  .item__buy{
+
+  .item__buy {
     padding: 12px 99px;
     margin: 0;
   }
 }
 @media (min-width: @desktop-width) {
-  .item{
+  .item {
     position: relative;
     margin: 55px auto 0;
     padding: 0 50px;
@@ -139,49 +158,56 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  .item__headings{
+
+  .item__headings {
     width: 100%;
     margin: 55px 0 50px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
   }
-  .item__headline{
+
+  .item__headline {
     order: 2;
     font-size: 53px;
     line-height: 57px;
   }
-  .item__weekly{
+
+  .item__weekly {
     order: 1;
     padding: 13px 27px 0 22px;
     line-height: 17px;
     text-align: center;
   }
-  .item__description{
+
+  .item__description {
     margin: 0 60px 0 175px;
   }
-  .item__features{
+
+  .item__features {
     margin: 43px 0 0 173px;
   }
-  .features__line{
+
+  .features__line {
     padding: 10px 0;
   }
-  .item__photo{
+
+  .item__photo {
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 2px;
     z-index: -1;
     width: 525px;
     height: 636px;
   }
-  .item__price{
+
+  .item__price {
     margin: 105px 0 35px 247px;
     font-size: 20px;
   }
-  .item__buy{
+
+  .item__buy {
     padding: 12px 99px;
     margin: 0 0 0 175px;
   }
-
-
 }

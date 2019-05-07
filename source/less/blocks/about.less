@@ -1,13 +1,15 @@
-.about{
+.about {
   padding: 30px 0 32px;
 }
-.about__headline{
+
+.about__headline {
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
   display: flex;
   margin: 0;
 }
+
 .page-main__about-list {
   margin: 0;
   padding: 0;
@@ -15,6 +17,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .about-list__item {
   position: relative;
   font-size: 17px;
@@ -24,6 +27,7 @@
   margin: 0;
   width: 250px;
 }
+
 .about-list__item--eco::before {
   content: "";
   position: absolute;
@@ -31,8 +35,9 @@
   left: 8px;
   width: 32px;
   height: 37px;
-  background: url(../img/icon-feature-flower.svg) no-repeat;
+  background: url("../img/icon-feature-flower.svg") no-repeat;
 }
+
 .about-list__item--scandinavian::before {
   content: "";
   position: absolute;
@@ -40,8 +45,9 @@
   left: 0;
   width: 47px;
   height: 27px;
-  background: url(../img/icon-feature-money.svg) no-repeat;
+  background: url("../img/icon-feature-money.svg") no-repeat;
 }
+
 .about-list__item--like::before {
   content: "";
   position: absolute;
@@ -49,8 +55,9 @@
   left: 8px;
   width: 34px;
   height: 27px;
-  background: url(../img/icon-feature-heart.svg) no-repeat;
+  background: url("../img/icon-feature-heart.svg") no-repeat;
 }
+
 .about-list__item--handmade::before {
   content: "";
   position: absolute;
@@ -58,8 +65,9 @@
   left: 4px;
   width: 35px;
   height: 34px;
-  background: url(../img/icon-feature-ball.svg) no-repeat;
+  background: url("../img/icon-feature-ball.svg") no-repeat;
 }
+
 .about-list__item--support::before {
   content: "";
   position: absolute;
@@ -67,8 +75,9 @@
   left: -6px;
   width: 55px;
   height: 23px;
-  background: url(../img/icon-feature-rocket.svg) no-repeat;
+  background: url("../img/icon-feature-rocket.svg") no-repeat;
 }
+
 .about-list__item--present::before {
   content: "";
   position: absolute;
@@ -76,50 +85,57 @@
   left: 3px;
   width: 33px;
   height: 32px;
-  background: url(../img/icon-feature-gift.svg) no-repeat;
+  background: url("../img/icon-feature-gift.svg") no-repeat;
 }
 @media (min-width: @tablet-width) {
-  .about{
+  .about {
     padding: 0 0 80px;
     height: min-content;
   }
+
   .page-main__about-list {
     flex-direction: column;
     flex-wrap: wrap;
     height: 440px;
   }
-  .about__headline{
+
+  .about__headline {
     font-size: 43px;
     line-height: 50px;
     font-weight: bold;
     margin: 0 0 20px -5px;
   }
+
   .about-list__item {
     width: 295px;
     font-size: 20px;
     line-height: 22px;
     font-weight: bold;
     margin: 0 0 28px;
-    &:nth-child(3n){
+
+    &:nth-child(3n) {
       margin: 0;
     }
   }
 }
 @media (min-width: @desktop-width) {
-  .about{
+  .about {
     width: 700px;
     margin: 0 auto;
-    padding: 0 0 25px
+    padding: 0 0 25px;
   }
+
   .page-main__about-list {
     height: 500px;
   }
-    .about__headline{
+
+  .about__headline {
     font-size: 53px;
     line-height: 57px;
     font-weight: bold;
   }
-    .about-list__item {
+
+  .about-list__item {
     font-size: 20px;
     line-height: 22px;
     font-weight: bold;

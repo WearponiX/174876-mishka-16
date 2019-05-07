@@ -4,28 +4,41 @@
   flex-direction: column;
   border-top: 1px solid #ececec;
 }
+
 .page-header__logo {
-  padding: 20px 0px;
+  padding: 20px 0;
   display: flex;
-}
-.page-header__logo  picture{
   margin: auto;
   width: 86px;
   height: 35px;
-//  &:hover{fill: #666666;}
-//  &:active{fill: #b2b2b2;}
+
+  &:focus,
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
 }
 
+.page-header .container {
+  padding: 0;
+  min-width: 320px;
+}
 //стили для навигации и скрытия
+
 .main-nav--closed .site-list,
-.main-nav--closed .user-list{
+.main-nav--closed .user-list {
   display: none;
 }
+
 .main-nav--nojs,
-.main-nav--opened{
+.main-nav--opened {
   display: block;
 }
-.nav-toggle{
+
+.nav-toggle {
   display: flex;
   border: none;
   background: #ffffff;
@@ -33,68 +46,81 @@
   height: 14px;
   margin: -80px 0 0 240px;
 }
-.main-nav--closed .nav-toggle::before{
-    display: block;
-    content: "";
-    width: 20px;
-    height: 2px;
-    background-color: #000000;
-    box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+
+.main-nav--closed .nav-toggle::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
 }
-.main-nav--opened .nav-toggle{
-  padding: 37px 25px 41px;
-  &::before,
-  &::after {
+
+.main-nav--opened .nav-toggle {
+  padding: 37px 25px 42px;
+
+  &::after,
+  &::before {
     content: "";
     width: 30px;
     height: 2px;
     background-color: #000000;
   }
+
   &::before {
     transform: rotate(45deg);
     box-shadow: none;
   }
+
   &::after {
     margin: 0 0 0 -30px;
     transform: rotate(-45deg);
   }
 }
-.main-nav--nojs .nav-toggle{
+
+.main-nav--nojs .nav-toggle {
   display: none;
 }
+
 .main-nav--closed .page-header__logo,
-.main-nav--closed .page-header__nav-toggle{
+.main-nav--closed .page-header__nav-toggle {
   display: flex;
 }
 //конец стилей для навигации и скрытия
-.main-nav__wrapper{
+
+.main-nav__wrapper {
   display: flex;
   flex-direction: column;
 }
+
+.offer-list,
 .site-list,
-.user-list,
-.offer-list{
-  margin: 0px;
-  padding: 0px;
+.user-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
-.nav-note{
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: normal;
-    color: #444444;
+
+.nav-note {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #444444;
 }
-.offer-list,
-.nav-note{
-    display: none;
+
+.nav-note,
+.offer-list {
+  display: none;
 }
+
 .site-list__item,
 .user-list__item {
   border-top: 1px solid #ececec;
 }
+
+.offer-list__item a,
 .site-list__item a,
-.user-list__item a,
-.offer-list__item a{
+.user-list__item a {
   display: flex;
   padding: 26px 0 28px 75px;
   text-decoration: none;
@@ -103,126 +129,178 @@
   font-weight: bold;
   color: #000000;
   cursor: pointer;
+
+  &:focus,
+  &:hover {
+    color: #8d8d8d;
+  }
+
+  &:active {
+    color: #cacaca;
+  }
 }
-.user-list__item a{
+
+.user-list__item a {
   padding: 32px 0 34px 83px;
 }
 
-.user-list__item path {
-  fill: #d3d2d2;
+.user-list__search {
+  & svg {
+    margin-left: -49px;
+    margin-top: 6px;
+    position: absolute;
+    fill: #d3d2d2;
+  }
+
+  &:focus svg,
+  &:hover svg {
+    fill: #9ce2d4;
+  }
+
+  &:active svg {
+    fill: #d7f3ee;
+  }
 }
-.user-list__search svg {
-  margin-left: -49px;
-  margin-top: 6px;
-  position: absolute;
-}
-.user-list__cart svg {
-  margin-left: -51px;
-  margin-top: 4px;
-  position: absolute;
+
+.user-list__cart {
+  & svg {
+    margin-left: -51px;
+    margin-top: 4px;
+    position: absolute;
+    fill: #d3d2d2;
+  }
+
+  &:hover svg &:focus svg {
+    fill: #9ce2d4;
+  }
+
+  &:active svg {
+    fill: #d7f3ee;
+  }
 }
 @media (min-width: @tablet-width) {
-  .main-nav{
+  .main-nav {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
   }
-  .page-header__logo{
+
+  .page-header__logo {
     padding: 0;
-    margin: 5px 0 0;
+    margin: 25px 0 0;
   }
 
-  .page-header__logo picture{
-
+  .page-header__logo--img {
     width: 113px;
     height: 46px;
   }
-  .page-header{
+
+  .page-header {
     flex-direction: row;
   }
-  .main-nav .nav-toggle{
+
+  .main-nav .nav-toggle {
     display: none;
   }
-  .main-nav__wrapper{
-  }
+
+  .main-nav__wrapper {}
+
   .main-nav .site-list,
-  .main-nav .user-list{
+  .main-nav .user-list {
     display: flex;
     flex-direction: row;
     flex-grow: 0;
   }
-  .user-list{
+
+  .user-list {
     order: 1;
     flex-grow: 1;
     min-height: 90px;
   }
-  .site-list{
+
+  .site-list {
     order: 2;
   }
-  .user-list span{
+
+  .user-list span {
     display: none;
   }
-  .user-list__item,
-  .site-list__item:last-child{
+
+  .user-list__item {
     border: none;
-    border-left:  1px solid #ececec;
+    border-left: 1px solid #ececec;
   }
-  .site-list__item a{
+
+  .site-list__item {
+    border: none;
+  }
+
+  .site-list__item a {
     padding: 0;
     margin: 17px 35px 25px 0;
     font-size: 15px;
   }
-  .nav-note{
+
+  .nav-note {
     order: 3;
     display: flex;
     padding: 2px 0 0;
   }
-
 }
 @media (min-width: @desktop-width) {
-  .site-list{
+  .site-list {
     order: 1;
     min-width: 400px;
   }
-  .site-list__item a{
+
+  .site-list__item a {
     margin: 30px 35px 25px 0;
     font-size: 17px;
   }
-  .site-list__item:last-child a{
+
+  .site-list__item:last-child a {
     margin: 30px 0 25px 35px;
   }
-  .page-header__logo{
+
+  .page-header__logo {
     order: 2;
-    margin: 0 auto;
+    margin: 10px auto 0;
     width: auto;
     height: auto;
   }
-  .page-header__logo picture{
+
+  .page-header__logo--img {
     width: 148px;
     height: 73px;
   }
-  .page-header__logo img{
-    width: 148px;
-    height: 73px;
-  }
-  .user-list{
+
+  .user-list {
     padding: 0 0 0 50px;
     min-width: 350px;
     order: 3;
   }
-  .user-list__item a{
+
+  .user-list__item a {
     padding: 30px 0 36px 83px;
   }
-  .offer-list{
+
+  .site-list__item:last-child {
+    border: none;
+    border-left: 1px solid #ececec;
+  }
+
+  .offer-list {
     order: 4;
     display: flex;
   }
-  .nav-note{
+
+  .nav-note {
     order: 5;
   }
-  .offer-list a{
+
+  .offer-list a {
     padding: 0;
     margin: 15px 60px 25px 0;
     font-size: 15px;
