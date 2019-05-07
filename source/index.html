@@ -11,8 +11,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
 </head>
+
 <body>
-  <div style="display:none"><include src="build/img/sprite.svg"></include></div>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <div class="container">
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -61,15 +64,15 @@
           <a href="#">
             <p>Предметы интерьера</p>
             <svg class="merchandise__item-icon--lamp" width="41" height="63">
-            <use xlink:href="#icon-interior"></use>
+              <use xlink:href="#icon-interior"></use>
             </svg>
           </a>
         </li>
         <li class="merchandise__item merchandise__brick"><a href="#">
-          <p>Детские игрушки</p>
-          <svg class="merchandise__item-icon--brick" width="60" height="60">
-            <use xlink:href="#icon-toy"></use>
-          </svg>
+            <p>Детские игрушки</p>
+            <svg class="merchandise__item-icon--brick" width="60" height="60">
+              <use xlink:href="#icon-toy"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -212,7 +215,7 @@
         Выберите размер:
       </p>
       <div class="modal-window__size-block">
-        <input type="radio" class="modal-window__radio" value="s" name="size" id="size-s" >
+        <input type="radio" class="modal-window__radio" value="s" name="size" id="size-s">
         <label class="modal-window__label" for="size-s">S</label>
         <input type="radio" class="modal-window__radio" value="m" name="size" id="size-m" checked>
         <label class="modal-window__label" for="size-m">M</label>
@@ -224,7 +227,7 @@
       </button>
     </form>
     <button class="visually-hidden modal-close" type="submit"></button>
-</section>
+  </section>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-window.onload = function(){
+window.onload = function() {
   var navMain = document.querySelector('.main-nav');
   var navToggle = document.querySelector('.nav-toggle');
   navMain.classList.remove('main-nav--nojs');
@@ -12,33 +12,33 @@ window.onload = function(){
     }
   })
 
-var index=document.querySelector(".item__buy");
-var сatalog=document.querySelectorAll(".catalog-item__buy");
-var modal=document.querySelector(".modal-window");
+  var index = document.querySelector(".item__buy");
+  var сatalog = document.querySelectorAll(".catalog-item__buy");
+  var modal = document.querySelector(".modal-window");
 
-if (index) {
-  index.addEventListener ("click", function (evt) {
-  evt.preventDefault();
-  modal.classList.remove("modal--close");
-  });
-}
-
-if (сatalog) {
-  for (var i = 0; i <= (сatalog.length-1); i++) {
-    сatalog[i].addEventListener ("click", function (evt) {
-    evt.preventDefault();
-    modal.classList.remove("modal--close");
+  if (index) {
+    index.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      modal.classList.remove("modal--close");
     });
   }
-}
 
- window.addEventListener("keydown", function (evt) {
-   if (evt.keyCode === 27) {
-     evt.preventDefault();
-     modal.classList.add("modal--close");
-   }
- });
-document.querySelector('.contacts__map').classList.remove('contacts__map--nojs');
+  if (сatalog) {
+    for (var i = 0; i <= (сatalog.length - 1); i++) {
+      сatalog[i].addEventListener("click", function(evt) {
+        evt.preventDefault();
+        modal.classList.remove("modal--close");
+      });
+    }
+  }
+
+  window.addEventListener("keydown", function(evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      modal.classList.add("modal--close");
+    }
+  });
+  document.querySelector('.contacts__map').classList.remove('contacts__map--nojs');
 };
 ymaps.ready(function() {
   var myMap = new ymaps.Map("map", {

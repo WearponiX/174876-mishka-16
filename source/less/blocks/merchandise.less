@@ -1,19 +1,22 @@
-.merchandise{
+.merchandise {
   display: flex;
   padding: 0;
   margin: 0;
   flex-direction: column;
   list-style: none;
 }
-.merchandise__item{
+
+.merchandise__item {
   height: 103px;
-  &:hover,
-  & a:focus{
+
+  & a:focus,
+  &:hover {
     height: 108px;
     margin: -5px 0 0;
   }
 }
-.merchandise__item a{
+
+.merchandise__item a {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -22,7 +25,8 @@
   justify-content: space-between;
   text-decoration: none;
 }
-.merchandise__item p{
+
+.merchandise__item p {
   padding: 24px 0 31px 30px;
   margin: 0;
   max-width: 150px;
@@ -31,52 +35,76 @@
   line-height: 24px;
   color: white;
 }
-.merchandise__lamp{
+
+.merchandise__lamp {
   background: #63d1bb;
-  &:hover,
-  & a:focus{background: #59d5bc}
-  &:active a{color: #97e2d2}
-  &:active svg{fill: #44c0aa}
+
+  & a:focus,
+  &:hover {
+    background: #59d5bc;
+  }
+
+  &:active a {
+    color: #97e2d2;
+  }
+
+  &:active svg {
+    fill: #44c0aa;
+  }
 }
-.merchandise__item-icon--lamp{
+
+.merchandise__item-icon--lamp {
   padding: 22px 36px 0 0;
   fill: #3bb09d;
 }
-.merchandise__brick{
+
+.merchandise__brick {
   background: #56c3b2;
-  &:hover,
-  & a:focus{background: #46c1ae}
-  &:active a{color: #8dd5c9}
-  &:active svg{fill: #37b2a0}
+
+  & a:focus,
+  &:hover {
+    background: #46c1ae;
+  }
+
+  &:active a {
+    color: #8dd5c9;
+  }
+
+  &:active svg {
+    fill: #37b2a0;
+  }
 }
-.merchandise__item-icon--brick{
+
+.merchandise__item-icon--brick {
   padding: 21px 27px 0 0;
   fill: #35a999;
 }
-@media (min-width: @tablet-width){
-  .merchandise{
+@media (min-width: @tablet-width) {
+  .merchandise {
     flex-direction: row;
     font-size: 20px;
     line-height: 30px;
   }
-  .merchandise__item{
+
+  .merchandise__item {
     width: 50%;
     height: 120px;
-    &:hover,
-    & a:focus{
+
+    & a:focus,
+    &:hover {
       height: 125px;
       margin: -5px 0 0;
     }
   }
-  .merchandise__item p{
+
+  .merchandise__item p {
     padding: 27px 0 31px 35px;
     font-size: 20px;
     line-height: 30px;
   }
-  .merchandise__lamp svg,
-  .merchandise__brick svg{
+
+  .merchandise__brick svg,
+  .merchandise__lamp svg {
     padding: 30px 36px 0 0;
   }
-
-
 }
