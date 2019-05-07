@@ -11,7 +11,6 @@
 .form-item {
     border: none;
     margin: 0;
-    margin-bottom: 30px;
     padding: 0;
 }
 .form__heading {
@@ -55,14 +54,16 @@
     flex-direction: column;
     flex-wrap: nowrap;
 }
+.form__list-item--name{
+    padding: 14px 0 7px;
+}
 .form input[type="checkbox"]:checked, .form input[type="checkbox"]:not(:checked), .form input[type="radio"]:checked, .form input[type="radio"]:not(:checked) {
     position: absolute;
     left: -9999px;
 }
 .form input[type="checkbox"]:checked + label, .form input[type="checkbox"]:not(:checked) + label, .form input[type="radio"]:checked + label, .form input[type="radio"]:not(:checked) + label {
     position: relative;
-    padding-left: 50px;
-    line-height: 36px;
+    padding-left: 65px;
     cursor: pointer;
 }
 .form input[type="radio"]:checked + label:before, .form input[type="radio"]:not(:checked) + label:before {
@@ -73,6 +74,7 @@
     border-radius: 50%;
     border: 2px solid #444444;
     left: 0;
+    top: -10px;
 }
 .form input[type="radio"]:checked + label::after {
     content: "";
@@ -80,7 +82,7 @@
     width: 16px;
     height: 16px;
     left: 12px;
-    top: 12px;
+    top: 2px;
     background-color: #63d1bb;
     border-radius: 50%;
 }
@@ -116,13 +118,18 @@
     display: flex;
     flex-direction: column;
 }
-.form-item--phone svg, .form-item--mail svg {
+.form-item--phone svg{
     position: absolute;
-    bottom: 15px;
-    right: 0px;
+    bottom: 17px;
+    right: 7px;
+}
+.form-item--mail svg {
+    position: absolute;
+    bottom: 10px;
+    right: 3px;
 }
 .form__heading--phone {
-    margin: 30px 0 10px;
+    margin: 25px 0 10px;
 }
 .form__heading--mail {
     margin: 32px 0 10px;
@@ -164,7 +171,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     font-weight: normal;
     color: #444444;
     border: 2px solid #000000;
-    padding: 17px 15px;
+    padding: 13px 47px 19px 15px;
     height: 105px;
     resize: none;
 }
@@ -173,7 +180,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     line-height: 16px;
     font-weight: normal;
     color: #444444;
-    margin: 15px 0 30px;
+    margin: 15px 0 32px;
 }
 .form__submit {
     text-decoration: none;
@@ -182,7 +189,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     line-height: 24px;
     color: #444444;
     font-weight: bold;
-    padding: 12px 24px;
+    padding: 12px 45px;
     border: 2px solid #444444;
     margin: 0 0 56px;
     background: #ffffff;

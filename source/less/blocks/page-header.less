@@ -3,17 +3,22 @@
   width: 100%;
   flex-direction: column;
   border-top: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
 }
 .page-header__logo {
   padding: 20px 0px;
   display: flex;
-}
-.page-header__logo  picture {
   margin: auto;
-//  &:hover{fill: #666666;}
-//  &:active{fill: #b2b2b2;}
+  width: 86px;
+  height: 35px;
+
+  &:hover {
+   opacity: 0.5;
+  }
+  &:active {
+   opacity: 0.2;
+  }
 }
+
 //стили для навигации и скрытия
 .main-nav--closed .site-list,
 .main-nav--closed .user-list{
@@ -27,7 +32,7 @@
   display: flex;
   border: none;
   background: #ffffff;
-  padding: 30px 30px 50px;
+  padding: 31px 30px 48px;
   height: 14px;
   margin: -80px 0 0 240px;
 }
@@ -37,10 +42,10 @@
     width: 20px;
     height: 2px;
     background-color: #000000;
-    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+    box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
 }
 .main-nav--opened .nav-toggle{
-  padding: 40px 25px;
+  padding: 37px 25px 42px;
   &::before,
   &::after {
     content: "";
@@ -94,26 +99,50 @@
 .user-list__item a,
 .offer-list__item a{
   display: flex;
-  padding: 25px 0 28px 75px;
+  padding: 26px 0 28px 75px;
   text-decoration: none;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
   color: #000000;
   cursor: pointer;
+  &:hover {
+    color: #8d8d8d;
+  }
+  &:active {
+    color: #cacaca;
+  }
 }
-.user-list__item path {
-  fill: #d3d2d2;
+.user-list__item a{
+  padding: 32px 0 34px 83px;
 }
-.user-list__search svg {
-  margin-left: -42px;
-  margin-top: 7px;
-  position: absolute;
+.user-list__search {
+  & svg{
+    margin-left: -49px;
+    margin-top: 6px;
+    position: absolute;
+    fill: #d3d2d2;
+  }
+  &:hover svg{
+    fill: #9ce2d4;
+  }
+  &:active svg{
+    fill: #d7f3ee;
+  }
 }
-.user-list__cart svg {
-  margin-left: -44px;
-  margin-top: 5px;
-  position: absolute;
+.user-list__cart {
+  & svg{
+    margin-left: -51px;
+    margin-top: 4px;
+    position: absolute;
+    fill: #d3d2d2;
+  }
+  &:hover svg{
+    fill: #9ce2d4;
+  }
+  &:active svg{
+    fill: #d7f3ee;
+  }
 }
 @media (min-width: @tablet-width) {
   .main-nav{
@@ -125,7 +154,13 @@
   }
   .page-header__logo{
     padding: 0;
-    margin: 22px 0 0;
+    margin: 25px 0 0;
+  }
+
+  .page-header__logo--img{
+
+    width: 113px;
+    height: 46px;
   }
   .page-header{
     flex-direction: row;
@@ -144,6 +179,7 @@
   .user-list{
     order: 1;
     flex-grow: 1;
+    min-height: 90px;
   }
   .site-list{
     order: 2;
@@ -151,31 +187,58 @@
   .user-list span{
     display: none;
   }
-  .site-list__item,
   .user-list__item{
+    border: none;
+    border-left:  1px solid #ececec;
+  }
+  .site-list__item{
     border: none;
   }
   .site-list__item a{
     padding: 0;
-    margin: 25px 40px 25px 0;
+    margin: 17px 35px 25px 0;
     font-size: 15px;
   }
   .nav-note{
     order: 3;
     display: flex;
+    padding: 2px 0 0;
   }
 
 }
 @media (min-width: @desktop-width) {
   .site-list{
     order: 1;
+    min-width: 400px;
+  }
+  .site-list__item a{
+    margin: 30px 35px 25px 0;
+    font-size: 17px;
+  }
+  .site-list__item:last-child a{
+    margin: 30px 0 25px 35px;
   }
   .page-header__logo{
     order: 2;
-    margin: 10px auto;
+    margin: 10px auto 0;
+    width: auto;
+    height: auto;
+  }
+  .page-header__logo--img{
+    width: 148px;
+    height: 73px;
   }
   .user-list{
+    padding: 0 0 0 50px;
+    min-width: 350px;
     order: 3;
+  }
+  .user-list__item a{
+    padding: 30px 0 36px 83px;
+  }
+  .site-list__item:last-child{
+    border: none;
+    border-left:  1px solid #ececec;
   }
   .offer-list{
     order: 4;
@@ -186,7 +249,7 @@
   }
   .offer-list a{
     padding: 0;
-    margin: 25px 60px 25px 0;
+    margin: 15px 60px 25px 0;
     font-size: 15px;
   }
 }

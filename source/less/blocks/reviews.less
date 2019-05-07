@@ -38,7 +38,7 @@
 .reviews__change-page--next{
   max-width: 50px;
   border: 1px solid #ececec;
-  padding: 12px 40px 7px 40px;
+  padding: 12px 40px 7px 39px;
   margin: 0;
   &:hover{
     fill: #666666;
@@ -53,7 +53,7 @@
 .reviews__contact{
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 20px;
   color: #444444;
   font-weight: bold;
@@ -71,28 +71,38 @@
 }
 @media(min-width: @tablet-width){
   .reviews{
-    position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 668px;
-    height: 457px;
-    padding: 0 50px;
-    margin: 0 auto;
-    background: url(../img/review@1x.jpg) no-repeat;
-  }
+      position: relative;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 668px;
+      height: 457px;
+      padding: 0 50px;
+      margin: 0 auto;
+
+      background-image: url(../img/review@1x.jpg);
+      background-repeat: no-repeat;
+      background-size: 350px 457px;
+      @media (min-resolution: @retina-dpi),
+           (min-resolution: @retina-dppx) {
+              background-image:  url(../img/review@2x.jpg);
+              background-size: 350px  457px;
+              }
+
+    }
+
   .reviews__headline{
     height: min-content;
     order: 1;
     font-size: 43px;
     line-height: 50px;
-    margin: 70px 0 0;
+    margin: 77px -4px 0;
   }
   .reviews__message{
     height: min-content;
     order: 3;
     font-size: 17px;
-    margin: 40px 0 50px;
+    margin: 30px 0 40px;
     min-width: 650px;
   }
   .reviews__author{
@@ -101,10 +111,13 @@
     margin: 0;
     flex-direction: column;
   }
+  .reviews__author-name{
+    font-size: 18px;
+  }
   .reviews__page{
     height: min-content;
     order: 5;
-    margin: 0 0 40px;
+    margin: 5px 0 35px;
   }
   .reviews__change-page--prev,
   .reviews__change-page--next{
@@ -113,9 +126,14 @@
     padding: 12px 20px 7px;
     border: none;
   }
+  .reviews__change-page--prev{
+    padding: 12px 15px 7px;
+  }
+
   .reviews__contact{
-    margin: 70px 0 0;
-    padding: 15px 35px;
+    font-size: 17px;
+    margin: 78px 0 0;
+    padding: 15px 38px;
     height: 20px;
     order: 2;
   }
@@ -123,7 +141,7 @@
 @media(min-width: @desktop-width){
   .reviews{
     width: 875px;
-    padding: 0 50px 0 175px;
+    padding: 0 0 0 175px;
   }
   .reviews__headline{
     height: min-content;
@@ -133,6 +151,13 @@
     margin: 70px 0 0;
   }
   .reviews__page{
-    margin: 0 0 100px;
+    margin: 0 0 90px;
+  }
+  .reviews__message{
+    margin: 31px 0 23px;
+    max-width: 800px;
+  }
+  .reviews__contact{
+    margin: 80px 0 0;
   }
 }
