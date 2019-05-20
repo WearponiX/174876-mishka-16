@@ -82,17 +82,17 @@ gulp.task("refresh", function(done) {
   done();
 });
 
-gulp.task("build", gulp.series(
-  "clean",
-  "copy",
-  "css",
-  "html"
-));
-
 gulp.task("images", gulp.series(
 "sprite",
 "webp"
 ));
 
+gulp.task("build", gulp.series(
+  "clean",
+  "copy",
+  "css",
+  "images",
+  "html"
+));
 
 gulp.task("start", gulp.series("build", "server"));
