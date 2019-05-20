@@ -86,9 +86,13 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
-  "sprite",
-  "webp",
   "html"
 ));
+
+gulp.task("images", gulp.series(
+"sprite",
+"webp"
+));
+
 
 gulp.task("start", gulp.series("build", "server"));
