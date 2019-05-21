@@ -12,7 +12,7 @@
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: -125px 0;
+  background-position: -125px -20px;
   background-size: 575px 373px;
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -69,6 +69,15 @@
   align-items: center;
   list-style: none;
 }
+
+.page-main__about-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: @tablet-width) {
   .page-main {
     margin: -65px 0 0;
@@ -130,6 +139,11 @@
   .page-main__line--reviews {
     margin: 68px 0 0;
   }
+  .page-main__about-list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 440px;
+  }
 }
 @media (min-width: @desktop-width) {
   .page-main__headline {
@@ -172,5 +186,8 @@
 
   .page-main__item-list {
     flex-direction: row;
+  }
+  .page-main__about-list {
+    height: 500px;
   }
 }
