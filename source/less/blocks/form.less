@@ -53,7 +53,7 @@
 
 .form-item__color,
 .form-item__name,
-.form-item__type {
+.item {
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -61,7 +61,7 @@
 
 .form__list-item--color,
 .form__list-item--name,
-.form__list-item--type {
+.list__item--type {
   margin: 0;
   padding: 22px 0 0;
   min-height: 40px;
@@ -347,7 +347,7 @@ textarea::-webkit-input-placeholder {
 
   .form-item__color,
   .form-item__name,
-  .form-item__type {
+  .item {
     font-size: 19px;
     line-height: 18px;
     font-weight: bold;
@@ -355,7 +355,7 @@ textarea::-webkit-input-placeholder {
 
   .form__list-item--color,
   .form__list-item--name,
-  .form__list-item--type {
+  .list__item--type {
     flex-direction: row;
   }
 
@@ -377,12 +377,12 @@ textarea::-webkit-input-placeholder {
     margin-bottom: 43px;
   }
 
-  .form__list-item--type {
+  .list__item--type {
     width: 335px;
     min-height: 50px;
   }
 
-  .form__list-item--type {
+  .list__item--type {
     padding: 0;
   }
 
@@ -518,15 +518,11 @@ textarea::-webkit-input-placeholder {
     bottom: 11px;
   }
 
-  .background-wrapper--form {
+  .background-wrapper-form {
     position: relative;
     margin: 0 0 2px;
     padding: 0;
     background-color: #f1f1f1;
-  }
-
-  .background-wrapper--form-footer {
-    margin-bottom: 0;
   }
 
   .background-wrapper::after {

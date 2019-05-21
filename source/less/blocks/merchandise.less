@@ -36,29 +36,26 @@
   color: white;
 }
 
-.merchandise__lamp {
+.merchandise__item--lamp{
   background: #63d1bb;
-
   & a:focus,
   &:hover {
     background: #59d5bc;
   }
-
-  &:active a {
+  &:active p {
     color: #97e2d2;
   }
-
   &:active svg {
     fill: #44c0aa;
   }
 }
 
-.merchandise__item-icon--lamp {
+.merchandise__item--lamp .merchandise__item-icon  {
   padding: 22px 36px 0 0;
   fill: #3bb09d;
 }
 
-.merchandise__brick {
+.merchandise__item--brick {
   background: #56c3b2;
 
   & a:focus,
@@ -75,7 +72,7 @@
   }
 }
 
-.merchandise__item-icon--brick {
+.merchandise__item--brick .merchandise__item-icon {
   padding: 21px 27px 0 0;
   fill: #35a999;
 }
@@ -102,9 +99,7 @@
     font-size: 20px;
     line-height: 30px;
   }
-
-  .merchandise__brick svg,
-  .merchandise__lamp svg {
+  .merchandise__item .merchandise__item-icon {
     padding: 30px 36px 0 0;
   }
 }

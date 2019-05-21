@@ -19,7 +19,7 @@ window.onload = function() {
   if (index) {
     index.addEventListener("click", function(evt) {
       evt.preventDefault();
-      modal.classList.remove("modal--close");
+      modal.classList.remove("modal-close");
     });
   }
 
@@ -27,7 +27,7 @@ window.onload = function() {
     for (var i = 0; i <= (сatalog.length - 1); i++) {
       сatalog[i].addEventListener("click", function(evt) {
         evt.preventDefault();
-        modal.classList.remove("modal--close");
+        modal.classList.remove("modal-close");
       });
     }
   }
@@ -35,7 +35,7 @@ window.onload = function() {
   window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
-      modal.classList.add("modal--close");
+      modal.classList.add("modal-close");
     }
   });
   document.querySelector('.contacts__map').classList.remove('contacts__map--nojs');
