@@ -2,8 +2,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #ececec;
   margin: 0 0 58px;
+  border: 1px solid #ececec;
+  &:focus-within,
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .catalog-making__headline-container {

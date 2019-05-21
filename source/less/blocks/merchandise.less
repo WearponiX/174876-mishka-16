@@ -7,11 +7,10 @@
 }
 
 .merchandise__item {
-  height: 103px;
-
+  min-height: 103px;
   & a:focus,
-  &:hover {
-    height: 108px;
+  &:hover{
+    min-height: 108px;
     margin: -5px 0 0;
   }
 }
@@ -63,7 +62,7 @@
     background: #46c1ae;
   }
 
-  &:active a {
+  &:active p{
     color: #8dd5c9;
   }
 
@@ -85,12 +84,11 @@
 
   .merchandise__item {
     width: 50%;
-    height: 120px;
+    min-height: 120px;
 
     & a:focus,
     &:hover {
-      height: 125px;
-      margin: -5px 0 0;
+      min-height: 125px;
     }
   }
 
