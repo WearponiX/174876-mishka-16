@@ -38,8 +38,11 @@ window.onload = function() {
       modal.classList.add("modal-close");
     }
   });
-  document.querySelector('.contacts__map').classList.remove('contacts__map--nojs');
 };
+
+var map = document.querySelector("#map");
+if(map){
+document.querySelector('.contacts__map').classList.remove('contacts__map--nojs');
 ymaps.ready(function() {
   var myMap = new ymaps.Map("map", {
       center: [59.938631, 30.323055],
@@ -60,4 +63,4 @@ ymaps.ready(function() {
     })
   myMap.geoObjects
     .add(myPlacemark)
-});
+})};
