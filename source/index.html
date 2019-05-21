@@ -21,11 +21,11 @@
     <div class="container">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="page-header__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo--img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
-          </picture>
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
+        </picture>
         </a>
         <button class="page-header__nav-toggle nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__site-list site-list">
@@ -61,23 +61,23 @@
     <div class="page-main__wrapper">
       <h1 class="page-main__headline page-main__headline--index">Милые штуки ручной<br> работы для дома</h1>
       <ul class="page-main__merchandise merchandise">
-        <li class="merchandise__item merchandise__lamp">
+        <li class="merchandise__item merchandise__item--lamp">
           <a href="#">
-            <p>Предметы интерьера</p>
-            <svg class="merchandise__item-icon--lamp" width="41" height="63">
-              <use xlink:href="#icon-interior"></use>
-            </svg>
+          <p>Предметы интерьера</p>
+          <svg class="merchandise__item-icon" width="41" height="63">
+            <use xlink:href="#icon-interior"></use>
+          </svg>
           </a>
         </li>
-        <li class="merchandise__item merchandise__brick"><a href="#">
-            <p>Детские игрушки</p>
-            <svg class="merchandise__item-icon--brick" width="60" height="60">
-              <use xlink:href="#icon-toy"></use>
-            </svg>
+        <li class="merchandise__item merchandise__item--brick"><a href="#">
+          <p>Детские игрушки</p>
+          <svg class="merchandise__item-icon" width="60" height="60">
+            <use xlink:href="#icon-toy"></use>
+          </svg>
           </a>
         </li>
       </ul>
-    </div> <span class="page-main__line--white"></span>
+    </div> <span class="page-main__line page-main__line--white"></span>
     <section class="page-main__item item">
       <div class="item__headings">
         <h3 class="item__headline">Вязаные корзинки</h3>
@@ -109,11 +109,11 @@
       <p class="item__price">Цена: 990 руб.</p>
       <a class="item__buy" href="#">Заказать</a>
     </section>
-    <span class="page-main__line--grey page-main__line--item"></span>
+    <span class="page-main__line page-main__line--grey page-main__line--item"></span>
     <div class="container">
       <section class="page-main__about about">
         <h3 class="about__headline">Коротко о нас:</h3>
-        <ul class="page-main__about-list">
+        <ul class="page-main__about-list about-list">
           <li class="about-list__item about-list__item--eco">Экологически<br>чистые материалы</li>
           <li class="about-list__item about-list__item--scandinavian ">Скандинавский стиль<br>по российской цене</li>
           <li class="about-list__item about-list__item--like ">Увеличивает лайки<br>на фотографиях</li>
@@ -132,18 +132,18 @@
       <div class="reviews__page">
         <a class="reviews__change-page reviews__change-page--prev" href="#">
           <p class="visually-hidden">Предыдущая страница</p>
-          <svg class="reviews__change-icon--prev" width="50" height="27">
+          <svg class="reviews__change-icon reviews__change-icon--prev" width="50" height="27">
             <use xlink:href="#icon-left-arrow"></use>
           </svg>
         </a>
         <a class="reviews__change-page reviews__change-page--next" href="#">
           <p class="visually-hidden">Следующая страница</p>
-          <svg class="reviews__change-icon--next" width="50" height="27">
+          <svg class="reviews__change-icon reviews__change-icon--next" width="50" height="27">
             <use xlink:href="#icon-right-arrow"></use>
           </svg>
         </a>
       </div> <a class="reviews__contact" href="#">Написать</a>
-    </section> <span class="page-main__line--grey page-main__line--reviews"></span>
+    </section> <span class="page-main__line page-main__line--grey page-main__line--reviews"></span>
     <div class="container">
       <section class="page-main__contacts contacts">
         <h3 class="contacts__headline">Контакты</h3>
@@ -174,28 +174,28 @@
   <footer class="page-footer">
     <div class="container">
       <a class="page-footer__logo" href="index.html">
-        <svg class="page-footer__logo--icon" width="102" height="35">
+        <svg width="102" height="35">
           <use xlink:href="#logo-footer"></use>
         </svg>
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-            <svg class="social__link-icon--instagram" width="22" height="22">
+            <svg class="social__link-icon social__link-icon--instagram" width="22" height="22">
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-            <svg class="social__link-icon--facebook" width="15" height="28">
+            <svg class="social__link-icon social__link-icon--facebook" width="15" height="28">
               <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
-            <svg class="social__link-icon--twitter" width="24" height="21">
+            <svg class="social__link-icon social__link-icon--twitter" width="24" height="21">
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
@@ -209,7 +209,7 @@
       </a>
     </div>
   </footer>
-  <section class="modal--close modal-window">
+  <section class="modal-close modal-window">
     <form class="modal-window__form" method="post" action="https://echo.htmlacademy.ru">
       <h2 class="modal-window__header">Добавить в корзину</h2>
       <p class="modal-window__description">

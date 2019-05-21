@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <title>Mishka</title>
@@ -9,11 +8,11 @@
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff" as="font">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9d0c2bb5-7d3c-417c-bf11-7ef9e29ec358"></script>
   <script src="js/script.js"></script>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
 </head>
-
 <body>
   <div style="display:none">
     <include src="build/img/sprite.svg"></include>
@@ -22,11 +21,11 @@
     <div class="container">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="page-header__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo--img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
-          </picture>
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
+        </picture>
         </a>
         <button class="page-header__nav-toggle nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__site-list site-list">
@@ -59,8 +58,8 @@
     </div>
   </header>
   <main class="page-main">
-    <div class="page-main__wrapper--grey">
-      <h1 class="page-main__headline ">Каталог товаров</h1> <span class="page-main__line--white"></span>
+    <div class="page-main__wrapper-grey">
+      <h1 class="page-main__headline ">Каталог товаров</h1> <span class="page-main__line page-main__line--white"></span>
     </div>
     <div class="container">
       <ul class="page-main__catalog catalog">
@@ -83,7 +82,7 @@
             <p class="catalog-item__size">Рост 30 см, вес 200 г</p>
             <p class="catalog-item__price">1 200 руб.
               <a class="catalog-item__buy" href="#">
-                <svg class="user-list__icon--cart" width="21" height="19">
+                <svg width="21" height="19">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
               </a>
@@ -108,7 +107,7 @@
             <p class="catalog-item__size">Диаметр 15 см, высота 10 см</p>
             <p class="catalog-item__price">690 руб.
               <a class="catalog-item__buy" href="#">
-                <svg class="user-list__icon--cart" width="21" height="19">
+                <svg width="21" height="19">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
               </a>
@@ -133,7 +132,7 @@
             <p class="catalog-item__size">Диаметр 30 см, высота 30 см</p>
             <p class="catalog-item__price">1 500 руб.
               <a class="catalog-item__buy" href="#">
-                <svg class="user-list__icon--cart" width="21" height="19">
+                <svg width="21" height="19">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
               </a>
@@ -143,7 +142,7 @@
       </ul>
       <section class="catalog-making">
         <div class="catalog-making__headline-container">
-          <svg class="catalog-making__icon--video" width="32" height="32">
+          <svg class="catalog-making__icon" width="32" height="32">
             <use xlink:href="#icon-video"></use>
           </svg>
           <h3 class="catalog-making__headline">Процесс производства</h3>
@@ -155,7 +154,7 @@
             <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
             <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-            <img class="catalog-making__video--img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео процесса производства">
+            <img class="catalog-making__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео процесса производства">
           </picture>
           <button class="catalog-making__video-button" type="button" name="play"> <img class="catalog-making__video-play" src="img/icon-play.svg" width="101" height="77" alt="play"> </button>
         </div>
@@ -166,28 +165,28 @@
   <footer class="page-footer">
     <div class="container">
       <a class="page-footer__logo" href="index.html">
-        <svg class="page-footer__logo--icon" width="102" height="35">
+        <svg width="102" height="35">
           <use xlink:href="#logo-footer"></use>
         </svg>
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-            <svg class="social__link-icon--instagram" width="22" height="22">
+            <svg class="social__link-icon social__link-icon--instagram" width="22" height="22">
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-            <svg class="social__link-icon--facebook" width="15" height="28">
+            <svg class="social__link-icon social__link-icon--facebook" width="15" height="28">
               <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
-            <svg class="social__link-icon--twitter" width="24" height="21">
+            <svg class="social__link-icon social__link-icon--twitter" width="24" height="21">
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
@@ -201,7 +200,7 @@
       </a>
     </div>
   </footer>
-  <section class="modal--close modal-window">
+  <section class="modal-close modal-window">
     <form class="modal-window__form" method="post" action="https://echo.htmlacademy.ru">
       <h2 class="modal-window__header">Добавить в корзину</h2>
       <p class="modal-window__description">
