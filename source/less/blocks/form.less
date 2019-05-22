@@ -1,10 +1,9 @@
-.background-wrapper {
+.form__background-wrapper {
   position: relative;
   margin: 0;
   padding: 0;
   background-color: #f1f1f1;
 }
-
 .form {
   display: flex;
   flex-direction: column;
@@ -12,12 +11,11 @@
 .form input{
   outline: none;
 }
-.form-item {
+.form__form-item {
   border: none;
   margin: 0;
   padding: 0;
 }
-
 .form__heading {
   font-size: 17px;
   line-height: 16px;
@@ -53,9 +51,9 @@
   margin-right: 30px;
 }
 
-.form-item__color,
-.form-item__name,
-.item {
+.form__form-item__color,
+.form__form-item__name,
+.form__form-item__phone{
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -170,13 +168,13 @@
   flex-grow: 1;
 }
 
-.form-item--mail input,
-.form-item--phone input {
+.form__form-item--mail input,
+.form__form-item--phone input {
   flex-grow: 1;
 }
 
-.form-item--mail,
-.form-item--phone {
+.form__form-item--mail,
+.form__form-item--phone {
   margin: 0;
   padding: 0;
   position: relative;
@@ -254,18 +252,18 @@ textarea::-webkit-input-placeholder {
   border-color: #62d1ba;
 }
 
-.form-item--mail:active .form__icon--mail,
-.form-item--mail:active .form__mail,
-.form-item--mail:focus .form__icon--mail,
-.form-item--mail:focus .form__mail,
-.form-item--mail:hover .form__icon--mail,
-.form-item--mail:hover .form__mail,
-.form-item--phone:active .form__icon--phone,
-.form-item--phone:active .form__phone,
-.form-item--phone:focus .form__icon--phone,
-.form-item--phone:focus .form__phone,
-.form-item--phone:hover .form__icon--phone,
-.form-item--phone:hover .form__phone {
+.form__form-item--mail:active .form__icon--mail,
+.form__form-item--mail:active .form__mail,
+.form__form-item--mail:focus .form__icon--mail,
+.form__form-item--mail:focus .form__mail,
+.form__form-item--mail:hover .form__icon--mail,
+.form__form-item--mail:hover .form__mail,
+.form__form-item--phone:active .form__icon--phone,
+.form__form-item--phone:active .form__phone,
+.form__form-item--phone:focus .form__icon--phone,
+.form__form-item--phone:focus .form__phone,
+.form__form-item--phone:hover .form__icon--phone,
+.form__form-item--phone:hover .form__phone {
   border-color: #62d1ba;
   fill: #62d1ba;
 }
@@ -347,9 +345,9 @@ textarea::-webkit-input-placeholder {
     margin-top: 69px;
   }
 
-  .form-item__color,
-  .form-item__name,
-  .item {
+  .form__form-item__color,
+  .form__form-item__name,
+  .form__form-item__phone {
     font-size: 19px;
     line-height: 18px;
     font-weight: bold;
@@ -361,7 +359,7 @@ textarea::-webkit-input-placeholder {
     flex-direction: row;
   }
 
-  .form-item__color {
+  .form__form-item__color {
     padding-top: 4px;
   }
 
@@ -384,7 +382,7 @@ textarea::-webkit-input-placeholder {
     min-height: 50px;
   }
 
-  .form-item--color {
+  .form__form-item--color {
     min-height: 300px;
   }
 
@@ -406,8 +404,8 @@ textarea::-webkit-input-placeholder {
     padding: 18px 0 4px;
   }
 
-  .form-item--mail,
-  .form-item--phone {
+  .form__form-item--mail,
+  .form__form-item--phone {
     min-height: 75px;
   }
 
@@ -417,7 +415,7 @@ textarea::-webkit-input-placeholder {
     margin-right: 47px;
   }
 
-  .form-item--phone {
+  .form__form-item--phone {
     margin-top: 27px;
   }
 
@@ -469,13 +467,13 @@ textarea::-webkit-input-placeholder {
     flex-wrap: nowrap;
   }
 
-  .form-item__name {
+  .form__form-item__name {
     padding: 18px 0 15px;
     box-sizing: content-box;
     margin-right: 27px;
   }
 
-  .form-item--name {
+  .form__form-item--name {
     min-height: 304px;
   }
 
@@ -500,7 +498,7 @@ textarea::-webkit-input-placeholder {
     padding-top: 37px;
   }
 
-  .form-item--contacts {
+  .form__form-item--contacts {
     min-height: 203px;
     padding-top: 27px;
   }
@@ -515,24 +513,11 @@ textarea::-webkit-input-placeholder {
     bottom: 11px;
   }
 
-  .background-wrapper-form {
+  .form__background-wrapper {
     position: relative;
     margin: 0 0 2px;
     padding: 0;
     background-color: #f1f1f1;
-  }
-
-  .background-wrapper::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    display: block;
-    width: 100%;
-    height: 24px;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-position-x: 50%;
-    background-size: 768px 25px;
   }
 
   .form__phone {
@@ -559,12 +544,12 @@ textarea::-webkit-input-placeholder {
     margin: 9px 0 32px;
   }
 
-  .form-item--color,
-  .form-item--mail,
-  .form-item--name,
-  .form-item--phone,
-  .form-item--type,
-  .form-item--wishes {
+  .form__form-item--color,
+  .form__form-item--mail,
+  .form__form-item--name,
+  .form__form-item--phone,
+  .form__form-item--type,
+  .form__form-item--wishes {
     position: relative;
     margin: 0;
     padding: 0;
@@ -591,7 +576,7 @@ textarea::-webkit-input-placeholder {
   }
 }
 @media (min-width:@desktop-width) {
-  .background-wrapper::after {
+  .form__background-wrapper::after {
     background-size: auto 36px;
   }
 
@@ -614,7 +599,7 @@ textarea::-webkit-input-placeholder {
     width: 786px;
   }
 
-  .form-item--color {
+  .form__form-item--color {
     min-height: 226px;
   }
 
@@ -641,7 +626,7 @@ textarea::-webkit-input-placeholder {
     margin-left: 60px;
   }
 
-  .form-item--contacts {
+  .form__form-item--contacts {
     padding-top: 24px;
     width: 873px;
   }
@@ -661,7 +646,7 @@ textarea::-webkit-input-placeholder {
     padding-left: 21px;
   }
 
-  .form-item--wishes {
+  .form__form-item--wishes {
     width: 873px;
   }
 

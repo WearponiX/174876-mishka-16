@@ -26,72 +26,6 @@
   padding: 0;
   min-width: 320px;
 }
-//стили для навигации и скрытия
-
-.main-nav--closed .site-list,
-.main-nav--closed .user-list {
-  display: none;
-}
-
-.main-nav--nojs,
-.main-nav--opened {
-  display: block;
-}
-
-.nav-toggle {
-  display: flex;
-  border: none;
-  background: #ffffff;
-  padding: 35px 30px 48px;
-  height: 14px;
-  margin: -80px 0 0 240px;
-}
-
-.main-nav--closed .nav-toggle::before {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 2px;
-  background-color: #000000;
-  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
-}
-
-.main-nav--opened .nav-toggle {
-  padding: 37px 25px 42px;
-
-  &::after,
-  &::before {
-    content: "";
-    width: 30px;
-    height: 2px;
-    background-color: #000000;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    margin: 0 0 0 -30px;
-    transform: rotate(-45deg);
-  }
-}
-
-.main-nav--nojs .nav-toggle {
-  display: none;
-}
-
-.main-nav--closed .page-header__logo,
-.main-nav--closed .page-header__nav-toggle {
-  display: flex;
-}
-//конец стилей для навигации и скрытия
-
-.main-nav__wrapper {
-  display: flex;
-  flex-direction: column;
-}
 
 .offer-list,
 .site-list,
@@ -180,14 +114,6 @@
   }
 }
 @media (min-width: @tablet-width) {
-  .main-nav {
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .page-header__logo {
     padding: 0;
     margin: 25px 0 0;
@@ -200,19 +126,6 @@
 
   .page-header {
     flex-direction: row;
-  }
-
-  .main-nav .nav-toggle {
-    display: none;
-  }
-
-  .main-nav__wrapper {}
-
-  .main-nav .site-list,
-  .main-nav .user-list {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 0;
   }
 
   .user-list {

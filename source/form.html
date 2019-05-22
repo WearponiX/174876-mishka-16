@@ -67,8 +67,8 @@
     <h2 class="visually-hidden">Форма</h2>
     <form class="page-main__form form" action="#">
       <div class="container">
-        <fieldset class="form-item">
-          <div class="form-item form-item--type">
+        <fieldset class="form__form-item">
+          <div class="form__form-item form__form-item--type">
             <p class="form__heading form__heading--type">Тип</p>
             <ul class="form__list list">
               <li class="list__item list__item--type">
@@ -83,35 +83,35 @@
           </div>
         </fieldset>
       </div>
-      <div class="background-wrapper-form">
+      <div class="form__background-wrapper">
         <div class="container">
-          <fieldset class="form-item">
-            <div class="form-item form-item--color">
+          <fieldset class="form__form-item">
+            <div class="form__form-item form__form-item--color">
               <p class="form__heading form__heading--color">Цвет</p>
               <ul class="form__list form__list">
                 <li class="form__list-item form__list-item--color">
                   <input type="checkbox" name="item-color" value="white" id="white" checked>
-                  <label class="form-item__color" for="white">Белый</label>
+                  <label class="form__form-item__color" for="white">Белый</label>
                 </li>
                 <li class="form__list-item form__list-item--color">
                   <input type="checkbox" name="item-color" value="gray" id="gray" checked>
-                  <label class="form-item__color" for="gray">Серый</label>
+                  <label class="form__form-item__color" for="gray">Серый</label>
                 </li>
                 <li class="form__list-item form__list-item--color">
                   <input type="checkbox" name="item-color" value="tiffany" id="tiffany">
-                  <label class="form-item__color" for="tiffany">«Тиффани»</label>
+                  <label class="form__form-item__color" for="tiffany">«Тиффани»</label>
                 </li>
                 <li class="form__list-item form__list-item--color">
                   <input type="checkbox" name="item-color" value="black" id="black">
-                  <label class="form-item__color" for="black">Черный</label>
+                  <label class="form__form-item__color" for="black">Черный</label>
                 </li>
                 <li class="form__list-item form__list-item--color">
                   <input type="checkbox" name="item-color" value="pink" id="pink">
-                  <label class="form-item__color" for="pink">Розовый</label>
+                  <label class="form__form-item__color" for="pink">Розовый</label>
                 </li>
                 <li class="form__list-item form__list-item--color">
                   <input type="checkbox" name="item-color" value="orange" id="orange">
-                  <label class="form-item__color" for="orange">Оранжевый</label>
+                  <label class="form__form-item__color" for="orange">Оранжевый</label>
                 </li>
               </ul>
             </div>
@@ -119,37 +119,37 @@
         </div>
       </div>
       <div class="container">
-        <fieldset class="form-item">
-          <div class="form-item form-item--name">
+        <fieldset class="form__form-item">
+          <div class="form__form-item form__form-item--name">
             <p class="form__heading form__heading--name">ФИО</p>
             <ul class="form__list form__list--name">
               <li class="form__list-item form__list-item--name">
                 <input type="text" name="buyer-name" placeholder="Введите ваше имя*" id="name" required>
-                <label class="form-item__name" for="name">Имя:</label>
+                <label class="form__form-item__name" for="name">Имя:</label>
               </li>
               <li class="form__list-item form__list-item--name">
                 <input type="text" name="buyer-name" placeholder="Укажите фамилию*" id="lastname" required>
-                <label class="form-item__name" for="lastname">Фамилия:</label>
+                <label class="form__form-item__name" for="lastname">Фамилия:</label>
               </li>
               <li class="form__list-item form__list-item--name">
                 <input type="text" name="buyer-name" placeholder="Отчество, если желаете" id="secondname" required>
-                <label class="form-item__name" for="secondname">Отчество:</label>
+                <label class="form__form-item__name" for="secondname">Отчество:</label>
               </li>
             </ul>
           </div>
         </fieldset>
       </div>
-      <div class="background-wrapper-form">
+      <div class="form__background-wrapper">
         <div class="container">
-          <fieldset class="form-item form-item--contacts">
-            <section class="form-item form-item--phone">
+          <fieldset class="form__form-item form__form-item--contacts">
+            <section class="form__form-item form__form-item--phone">
               <label class="form__heading form__heading--phone">ТЕЛ</label>
               <input class="form__phone" type="tel" name="buyer-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               <svg class="form__icon form__icon--phone" width="24.829" height="24.333">
                 <use xlink:href="#icon-phone"></use>
               </svg>
             </section>
-            <section class="form-item form-item--mail">
+            <section class="form__form-item form__form-item--mail">
             <label class="form__heading form__heading--mail">E-MAIL</label>
               <input class="form__mail" type="email" name="buyer-mail" placeholder="Ваш Email*" required>
               <svg class="form__icon form__icon--mail" width="32" height="32">
@@ -160,8 +160,8 @@
         </div>
       </div>
       <div class="container">
-        <fieldset class="form-item">
-          <div class="form-item form-item--wishes">
+        <fieldset class="form__form-item">
+          <div class="form__form-item form__form-item--wishes">
             <p class="form__heading form__heading--additional">ДОП</p>
             <textarea class="form__wishes" name="buyer-wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
