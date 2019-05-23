@@ -82,12 +82,16 @@ gulp.task("refresh", function(done) {
   done();
 });
 
+gulp.task("images", gulp.series(
+"sprite",
+"webp"
+));
+
 gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
-  "sprite",
-  "webp",
+  "images",
   "html"
 ));
 

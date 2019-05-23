@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Mishka</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9d0c2bb5-7d3c-417c-bf11-7ef9e29ec358"></script>
   <script src="js/script.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
 </head>
@@ -23,10 +26,10 @@
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo--img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
+            <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
           </picture>
         </a>
-        <button class="page-header__nav-toggle nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__site-list site-list">
           <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
@@ -60,39 +63,39 @@
     <div class="page-main__wrapper">
       <h1 class="page-main__headline page-main__headline--index">Милые штуки ручной<br> работы для дома</h1>
       <ul class="page-main__merchandise merchandise">
-        <li class="merchandise__item merchandise__lamp">
+        <li class="merchandise__item merchandise__item--lamp">
           <a href="#">
             <p>Предметы интерьера</p>
-            <svg class="merchandise__item-icon--lamp" width="41" height="63">
+            <svg class="merchandise__item-icon" width="41" height="63">
               <use xlink:href="#icon-interior"></use>
             </svg>
           </a>
         </li>
-        <li class="merchandise__item merchandise__brick"><a href="#">
+        <li class="merchandise__item merchandise__item--brick"><a href="#">
             <p>Детские игрушки</p>
-            <svg class="merchandise__item-icon--brick" width="60" height="60">
+            <svg class="merchandise__item-icon" width="60" height="60">
               <use xlink:href="#icon-toy"></use>
             </svg>
           </a>
         </li>
       </ul>
-    </div> <span class="page-main__line--white"></span>
+    </div> <span class="page-main__line page-main__line--white"></span>
     <section class="page-main__item item">
       <div class="item__headings">
         <h3 class="item__headline">Вязаные корзинки</h3>
         <p class="item__weekly">Товар недели</p>
       </div>
       <p class="item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-      <table class="item__features features">
-        <tr class="features__line">
+      <table class="item__features">
+        <tr class="item__row">
           <td>Цвет:</td>
           <td>«Тиффани»/серый</td>
         </tr>
-        <tr class="features__line">
+        <tr class="item__row">
           <td>Диаметр:</td>
           <td>25 см</td>
         </tr>
-        <tr class="features__line">
+        <tr class="item__row">
           <td>Высота:</td>
           <td>15 см</td>
         </tr>
@@ -108,11 +111,11 @@
       <p class="item__price">Цена: 990 руб.</p>
       <a class="item__buy" href="#">Заказать</a>
     </section>
-    <span class="page-main__line--grey page-main__line--item"></span>
+    <span class="page-main__line page-main__line--grey page-main__line--item"></span>
     <div class="container">
       <section class="page-main__about about">
         <h3 class="about__headline">Коротко о нас:</h3>
-        <ul class="page-main__about-list">
+        <ul class="page-main__about-list about-list">
           <li class="about-list__item about-list__item--eco">Экологически<br>чистые материалы</li>
           <li class="about-list__item about-list__item--scandinavian ">Скандинавский стиль<br>по российской цене</li>
           <li class="about-list__item about-list__item--like ">Увеличивает лайки<br>на фотографиях</li>
@@ -131,18 +134,18 @@
       <div class="reviews__page">
         <a class="reviews__change-page reviews__change-page--prev" href="#">
           <p class="visually-hidden">Предыдущая страница</p>
-          <svg class="reviews__change-icon--prev" width="50" height="27">
+          <svg class="reviews__change-icon reviews__change-icon--prev" width="50" height="27">
             <use xlink:href="#icon-left-arrow"></use>
           </svg>
         </a>
         <a class="reviews__change-page reviews__change-page--next" href="#">
           <p class="visually-hidden">Следующая страница</p>
-          <svg class="reviews__change-icon--next" width="50" height="27">
+          <svg class="reviews__change-icon reviews__change-icon--next" width="50" height="27">
             <use xlink:href="#icon-right-arrow"></use>
           </svg>
         </a>
       </div> <a class="reviews__contact" href="#">Написать</a>
-    </section> <span class="page-main__line--grey page-main__line--reviews"></span>
+    </section> <span class="page-main__line page-main__line--grey page-main__line--reviews"></span>
     <div class="container">
       <section class="page-main__contacts contacts">
         <h3 class="contacts__headline">Контакты</h3>
@@ -173,28 +176,28 @@
   <footer class="page-footer">
     <div class="container">
       <a class="page-footer__logo" href="index.html">
-        <svg class="page-footer__logo--icon" width="102" height="35">
+        <svg width="102" height="35">
           <use xlink:href="#logo-footer"></use>
         </svg>
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-            <svg class="social__link-icon--instagram" width="22" height="22">
+            <svg class="social__link-icon social__link-icon--instagram" width="22" height="22">
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-            <svg class="social__link-icon--facebook" width="15" height="28">
+            <svg class="social__link-icon social__link-icon--facebook" width="15" height="28">
               <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
-            <svg class="social__link-icon--twitter" width="24" height="21">
+            <svg class="social__link-icon social__link-icon--twitter" width="24" height="21">
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
@@ -208,25 +211,25 @@
       </a>
     </div>
   </footer>
-  <section class="modal--close modal-window">
-    <form class="modal-window__form" method="post" action="https://echo.htmlacademy.ru">
-      <h2 class="modal-window__header">Добавить в корзину</h2>
-      <p class="modal-window__description">
+  <section class="modal modal--closed">
+    <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
+      <h2 class="modal__headline">Добавить в корзину</h2>
+      <p class="modal__description">
         Выберите размер:
       </p>
-      <div class="modal-window__size-block">
-        <input type="radio" class="modal-window__radio" value="s" name="size" id="size-s">
-        <label class="modal-window__label" for="size-s">S</label>
-        <input type="radio" class="modal-window__radio" value="m" name="size" id="size-m" checked>
-        <label class="modal-window__label" for="size-m">M</label>
-        <input type="radio" class="modal-window__radio" value="l" name="size" id="size-l">
-        <label class="modal-window__label" for="size-l">L</label>
+      <div class="modal__options">
+        <input type="radio" class="modal__radio" value="s" name="size" id="size-s">
+        <label class="modal__size" for="size-s">S</label>
+        <input type="radio" class="modal__radio" value="m" name="size" id="size-m" checked>
+        <label class="modal__size" for="size-m">M</label>
+        <input type="radio" class="modal__radio" value="l" name="size" id="size-l">
+        <label class="modal__size" for="size-l">L</label>
       </div>
-      <button class="modal-window__button" type="submit">
+      <button class="modal__button" type="submit">
         Добавить
       </button>
     </form>
-    <button class="visually-hidden modal-close" type="submit"></button>
+    <button type="submit"></button>
   </section>
 </body>
 

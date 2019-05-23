@@ -12,7 +12,7 @@
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: -125px 0;
+  background-position: -125px -20px;
   background-size: 575px 373px;
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -20,7 +20,7 @@
   }
 }
 
-.page-main__wrapper--grey {
+.page-main__wrapper-grey {
   width: 100%;
   background: #f1f1f1;
 }
@@ -35,7 +35,7 @@
   font-weight: bold;
 }
 
-.page-main__wrapper--grey .page-main__headline {
+.page-main__wrapper-grey .page-main__headline {
   margin: 0 auto;
   padding: 70px 0 75px;
 }
@@ -44,7 +44,7 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  margin: 22px 0 5px;
+  margin: 22px 0 16px;
 }
 
 .page-main__line--grey {
@@ -69,9 +69,17 @@
   align-items: center;
   list-style: none;
 }
+
+.page-main__about-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
 @media (min-width: @tablet-width) {
   .page-main {
-    margin: -65px 0 0;
+    margin: -66px 0 0;
   }
 
   .page-main__wrapper {
@@ -97,7 +105,7 @@
     width: 500px;
   }
 
-  .page-main__wrapper--grey .page-main__headline {
+  .page-main__wrapper-grey .page-main__headline {
     padding: 95px 0 80px;
   }
 
@@ -105,6 +113,7 @@
     font-weight: normal;
     font-size: 17px;
     line-height: 30px;
+    margin: 63px 0 35px;
   }
 
   .page-main__line--white {
@@ -130,6 +139,12 @@
   .page-main__line--reviews {
     margin: 68px 0 0;
   }
+
+  .page-main__about-list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 440px;
+  }
 }
 @media (min-width: @desktop-width) {
   .page-main__headline {
@@ -148,8 +163,12 @@
     }
   }
 
-  .page-main__wrapper--grey .page-main__headline {
-    padding: 95px 0;
+  .page-main__wrapper-grey .page-main__headline {
+    padding: 93px 0 100px;
+  }
+
+  .page-main__form-desctription {
+    margin: 110px 0 35px;
   }
 
   .page-main__line--white {
@@ -172,5 +191,9 @@
 
   .page-main__item-list {
     flex-direction: row;
+  }
+
+  .page-main__about-list {
+    height: 500px;
   }
 }
