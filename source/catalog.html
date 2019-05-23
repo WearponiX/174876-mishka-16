@@ -29,7 +29,7 @@
             <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
           </picture>
         </a>
-        <button class="page-header__nav-toggle nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__site-list site-list">
           <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
@@ -96,7 +96,7 @@
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bowl-desktop@2x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
               <img class="catalog-item__photo" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Фотография товара">
@@ -202,25 +202,25 @@
       </a>
     </div>
   </footer>
-  <section class="modal-close modal-window">
-    <form class="modal-window__form" method="post" action="https://echo.htmlacademy.ru">
-      <h2 class="modal-window__header">Добавить в корзину</h2>
-      <p class="modal-window__description">
+  <section class="modal modal--closed">
+    <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
+      <h2 class="modal__headline">Добавить в корзину</h2>
+      <p class="modal__description">
         Выберите размер:
       </p>
-      <div class="modal-window__size-block">
-        <input type="radio" class="modal-window__radio" value="s" name="size" id="size-s">
-        <label class="modal-window__label" for="size-s">S</label>
-        <input type="radio" class="modal-window__radio" value="m" name="size" id="size-m" checked>
-        <label class="modal-window__label" for="size-m">M</label>
-        <input type="radio" class="modal-window__radio" value="l" name="size" id="size-l">
-        <label class="modal-window__label" for="size-l">L</label>
+      <div class="modal__options">
+        <input type="radio" class="modal__radio" value="s" name="size" id="size-s">
+        <label class="modal__size" for="size-s">S</label>
+        <input type="radio" class="modal__radio" value="m" name="size" id="size-m" checked>
+        <label class="modal__size" for="size-m">M</label>
+        <input type="radio" class="modal__radio" value="l" name="size" id="size-l">
+        <label class="modal__size" for="size-l">L</label>
       </div>
-      <button class="modal-window__button" type="submit">
+      <button class="modal__button" type="submit">
         Добавить
       </button>
     </form>
-    <button class="visually-hidden modal-close" type="submit"></button>
+    <button type="submit"></button>
   </section>
 </body>
 
