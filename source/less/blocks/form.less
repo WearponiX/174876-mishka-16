@@ -524,6 +524,7 @@ textarea::-webkit-input-placeholder {
     padding-top: 27px;
     margin: 0;
   }
+
   .form__icon--phone {
     right: 26px;
     bottom: 18px;
@@ -604,8 +605,7 @@ textarea::-webkit-input-placeholder {
   }
 
   .page-main__form-desctription {
-    padding-left: 173px;
-    padding-top: 0;
+    padding: 0 176px;
   }
 
   .form__heading {
@@ -613,13 +613,28 @@ textarea::-webkit-input-placeholder {
     width: 111px;
   }
 
+  .form__form-item--type{
+  margin-bottom: 14px;
+  }
+
   .form__heading--color {
-    margin-left: 57px;
+    margin-left: 60px;
     margin-right: 5px;
+  }
+
+  .form__list-item--color {
+      width: 260px;
+  }
+  .form__form-item--type {
+    margin: 0;
+  }
+  .form__form-item--color div{
+    margin: 0 0 4px;
   }
 
   .form__list--color {
     width: 786px;
+    margin: 46px 0 29px;
   }
 
   .form__form-item--color {
@@ -667,6 +682,11 @@ textarea::-webkit-input-placeholder {
   .form input[type="tel"],
   .form input[type="email"] {
     padding-left: 21px;
+  }
+
+  .form input[type="radio"]:checked + label:before,
+  .form input[type="radio"]:not(:checked) + label:before {
+    left: 1px;
   }
 
   .form__form-item--wishes {
