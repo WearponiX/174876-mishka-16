@@ -235,7 +235,6 @@
   padding: 17px 0 15px;
 }
 
-
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #cccccc;
@@ -332,7 +331,7 @@ textarea::-webkit-input-placeholder {
     text-transform: uppercase;
     width: 167px;
     height: 12px;
-    margin: 20px 0 15px;
+    margin: 40px 0 0;
 
     &::after {
       background-color: transparent;
@@ -342,6 +341,11 @@ textarea::-webkit-input-placeholder {
       content: '';
     }
   }
+
+  .form__form-item {
+    margin: 0 0 15px;
+  }
+
   .form__background-wrapper {
     position: relative;
     margin: 0;
@@ -350,25 +354,30 @@ textarea::-webkit-input-placeholder {
   }
 
   .form__heading--color {
-    margin-top: 65px;
+    margin-top: 70px;
   }
 
   .form__heading--name {
-    margin-top: 69px;
+    margin-top: 68px;
+  }
+
+  .form__list-item--type {
+    margin: 15px 0 0;
   }
 
   .form__form-item__color,
   .form__form-item__name,
-  .form__form-item__phone {
+  .form__form-item__type {
     font-size: 19px;
     line-height: 18px;
     font-weight: bold;
   }
 
+  .form__form-item--type,
   .form__list-item--color,
-  .form__list-item--name,
-  .list__item--type {
+  .form__list-item--name {
     flex-direction: row;
+    padding: 18px 0 0;
   }
 
   .form__form-item__color {
@@ -395,11 +404,11 @@ textarea::-webkit-input-placeholder {
   }
 
   .form__form-item--color {
-    min-height: 300px;
+    min-height: 290px;
   }
 
   .form__list--color {
-    margin: 37px 0;
+    margin: 46px 0 16px;
     width: 521px;
     display: flex;
     flex-direction: row;
@@ -486,7 +495,7 @@ textarea::-webkit-input-placeholder {
   }
 
   .form__form-item--name {
-    min-height: 304px;
+    min-height: 288px;
   }
 
   .form input[type="text"],
@@ -513,8 +522,8 @@ textarea::-webkit-input-placeholder {
   .form__form-item--contacts {
     min-height: 203px;
     padding-top: 27px;
+    margin: 0;
   }
-
   .form__icon--phone {
     right: 26px;
     bottom: 18px;
@@ -546,6 +555,7 @@ textarea::-webkit-input-placeholder {
     font-size: 17px;
     line-height: 16px;
     padding: 16px 28px;
+    margin: 1px 0 52px;
   }
 
   .form__comment {
@@ -577,6 +587,7 @@ textarea::-webkit-input-placeholder {
     flex-direction: row;
     justify-content: space-between;
     align-content: flex-end;
+    height: 105px;
   }
 
   .form__wishes {
