@@ -34,9 +34,11 @@
 }
 
 .form__heading--color {
-  margin-top: 7px;
+  margin-top: 21px;
 }
-
+.form__form-item--color div{
+  margin: 0 0 15px;
+}
 .form__list {
   padding: 0;
 }
@@ -380,6 +382,19 @@ textarea::-webkit-input-placeholder {
     padding: 18px 0 0;
   }
 
+  .form__form-item--color,
+  .form__form-item--mail,
+  .form__form-item--name,
+  .form__form-item--phone,
+  .form__form-item--type,
+  .form__form-item--wishes {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
   .form__form-item__color {
     padding-top: 4px;
   }
@@ -403,8 +418,9 @@ textarea::-webkit-input-placeholder {
     min-height: 50px;
   }
 
-  .form__form-item--color {
+  .form__form-item--color div {
     min-height: 290px;
+    margin:  0 0 17px;
   }
 
   .form__list--color {
@@ -521,7 +537,7 @@ textarea::-webkit-input-placeholder {
 
   .form__form-item--contacts {
     min-height: 203px;
-    padding-top: 27px;
+    padding: 0 0 25px;
     margin: 0;
   }
 
@@ -565,19 +581,6 @@ textarea::-webkit-input-placeholder {
     line-height: 30px;
     font-weight: normal;
     margin: 9px 0 32px;
-  }
-
-  .form__form-item--color,
-  .form__form-item--mail,
-  .form__form-item--name,
-  .form__form-item--phone,
-  .form__form-item--type,
-  .form__form-item--wishes {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
   }
 
   .form-footer {
