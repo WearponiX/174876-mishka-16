@@ -23,6 +23,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 @font-face {
   font-weight: normal;
   font-family: "Open Sans";
@@ -30,6 +31,7 @@ body {
   font-display: optional;
   src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
 }
+
 @font-face {
   font-weight: bold;
   font-family: "Open Sans";
@@ -37,12 +39,14 @@ body {
   font-display: optional;
   src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
 }
+
 @media (min-width: @tablet-width) {
   .container {
     padding: 0 50px;
     width: calc(@tablet-width - 100px);
   }
 }
+
 @media (min-width: @desktop-width) {
   .container {
     padding: 0 50px;

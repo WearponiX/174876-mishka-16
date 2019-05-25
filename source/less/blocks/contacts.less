@@ -82,6 +82,7 @@
     color: #8d8d8d;
   }
 }
+
 @media (min-width: @tablet-width) {
   .contacts {
     padding: 0;
@@ -133,6 +134,7 @@
     height: 457px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .contacts {
     max-height: 457px;
@@ -152,6 +154,7 @@
   .contacts__data {
     width: 310px;
     margin: 0 0 77px 175px;
+    flex-direction: column;
   }
 
   .contacts__data tbody {
@@ -164,10 +167,6 @@
 
   .contacts__mail {
     margin: 0 0 25px;
-  }
-
-  .contacts__data {
-    flex-direction: column;
   }
 
   .contacts__contact {
