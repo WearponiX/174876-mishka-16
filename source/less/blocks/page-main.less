@@ -93,19 +93,19 @@
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-color: #f9f9f9;
-    background-size: 768px auto;
+    background-size: 1150px auto;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
-      background-size: 768px auto;
+      background-size: 1150px auto;
     }
 
     &::after {
       content: "";
       width: 768px;
       height: 23px;
-      padding: 0 50px;
-      margin: -12px auto 0;
+      padding: 0;
+      margin: -12px 0 0 -50px;
       background: url("../img/bg-zigzag-fill.svg") repeat-x;
       background-position-x: 50%;
       background-size: 768px 25px;
@@ -124,7 +124,7 @@
   }
 
   .page-main__headline {
-    margin: 153px auto 165px;
+    margin: 153px auto 373px;
     font-size: 43px;
     line-height: 50px;
     width: 500px;
@@ -143,12 +143,12 @@
 
   .page-main__reviews::after {
     margin: 0;
-    padding: 0 50px;
+    padding: 0;
     height: 17px;
     background-size: auto 17px;
     position: absolute;
     bottom: -80px;
-    left: -50px;
+    left: 0;
   }
 
   .page-main__form-desctription {
