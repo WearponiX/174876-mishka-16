@@ -7,14 +7,19 @@
   align-items: center;
   list-style: none;
 }
+
 @media (min-width: @tablet-width) {
   .catalog {
-    margin: 70px 0 0;
+    margin: 75px 0 0;
   }
 }
+
 @media (min-width: @desktop-width) {
   .catalog {
+    justify-content: flex-start;
     margin: 120px 0 0;
     flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1150px;
   }
 }

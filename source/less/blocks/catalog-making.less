@@ -33,7 +33,7 @@
   width: 170px;
   margin: 0;
   padding: 25px 0 25px 90px;
-  font-family: "OpenSans",sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -45,6 +45,8 @@
   position: relative;
   margin: 0;
   padding: 0 0 25px;
+  width: 260px;
+  height: 150px;
 }
 
 .catalog-making__video-button {
@@ -92,7 +94,6 @@
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
-  font-weight: bold;
   color: #444444;
   text-align: center;
   border: 2px solid #444444;
@@ -108,10 +109,6 @@
   }
 }
 
-.catalog-making__video {
-  width: 260px;
-  height: 150px;
-}
 @media (min-width: @tablet-width) {
   .catalog-making {
     margin: 0 0 65px;
@@ -125,11 +122,6 @@
   .catalog-making__video-button {
     top: 185px;
     left: 275px;
-  }
-
-  .catalog-making__video {
-    order: -1;
-    padding: 0;
   }
 
   .catalog-making__headline {
@@ -150,10 +142,13 @@
   }
 
   .catalog-making__video {
+    order: -1;
+    padding: 0;
     width: 668px;
     height: 455px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .catalog-making {
     position: relative;
@@ -169,7 +164,7 @@
   }
 
   .catalog-making__headline {
-    padding: 95px 150px 0 88px;
+    padding: 98px 150px 0 88px;
   }
 
   .catalog-making__icon {
@@ -184,12 +179,15 @@
     line-height: 30px;
     width: 235px;
     padding: 0 0 0 520px;
-    margin: 10px 55px 0 0;
+    margin: 5px 55px 0 0;
   }
 
   .catalog-making__video {
     position: absolute;
     left: 0;
+    top: 0;
+    width: 682px;
+    height: 455px;
   }
 
   .catalog-making__buy {
@@ -201,10 +199,5 @@
   .catalog-making__video-button {
     top: 190px;
     left: 285px;
-  }
-
-  .catalog-making__video {
-    width: 682px;
-    height: 455px;
   }
 }

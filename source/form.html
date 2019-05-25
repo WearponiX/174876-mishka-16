@@ -21,7 +21,7 @@
   </div>
   <header class="page-header">
     <div class="container">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <a class="page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -67,7 +67,7 @@
       <p class="page-main__form-desctription">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     </div>
     <h2 class="visually-hidden">Форма</h2>
-    <form class="page-main__form form" action="#">
+    <form class="page-main__form form" method="get" action="https://echo.htmlacademy.ru">
       <div class="container">
         <fieldset class="form__form-item">
           <div class="form__form-item form__form-item--type">
@@ -134,7 +134,7 @@
                 <label class="form__form-item__name" for="lastname">Фамилия:</label>
               </li>
               <li class="form__list-item form__list-item--name">
-                <input type="text" name="buyer-name" placeholder="Отчество, если желаете" id="secondname" required>
+                <input type="text" name="buyer-name" placeholder="Отчество, если желаете" id="secondname">
                 <label class="form__form-item__name" for="secondname">Отчество:</label>
               </li>
             </ul>
@@ -174,44 +174,45 @@
         </div>
       </div>
     </form>
-  </main>  <footer class="page-footer">
-      <div class="container">
-        <a class="page-footer__logo" href="index.html">
-          <svg width="102" height="35">
-            <use xlink:href="#logo-footer"></use>
-          </svg>
-        </a>
-        <ul class="page-footer__social social">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-              <svg class="social__link-icon social__link-icon--instagram" width="22" height="22">
-                <use xlink:href="#icon-insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <svg class="social__link-icon social__link-icon--facebook" width="15" height="28">
-                <use xlink:href="#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
-              <svg class="social__link-icon social__link-icon--twitter" width="24" height="21">
-                <use xlink:href="#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <a class="page-footer__copyright" href="https://up.htmlacademy.ru/adaptive/16">
-          Разработано
-          <svg class="page-footer__copyright-icon" width="27" height="34">
-            <use xlink:href="#icon-htmlacademy"></use>
-          </svg>
-        </a>
-      </div>
-    </footer>
-  </body>
+  </main>
+  <footer class="page-footer">
+    <div class="container">
+      <a class="page-footer__logo" href="index.html">
+        <svg width="102" height="35">
+          <use xlink:href="#logo-footer"></use>
+        </svg>
+      </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+            <svg class="social__link-icon social__link-icon--instagram" width="22" height="22">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <svg class="social__link-icon social__link-icon--facebook" width="15" height="28">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+            <svg class="social__link-icon social__link-icon--twitter" width="24" height="21">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a class="page-footer__copyright" href="https://up.htmlacademy.ru/adaptive/16">
+        Разработано
+        <svg class="page-footer__copyright-icon" width="27" height="34">
+          <use xlink:href="#icon-htmlacademy"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+</body>
 
-  </html>
+</html>

@@ -19,6 +19,16 @@
   margin: 0;
 }
 
+.reviews__slider {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__slide {
+  list-style: none;
+}
+
 .reviews__author {
   max-width: 260px;
   margin: 23px 0 10px;
@@ -70,7 +80,7 @@
   padding: 14px 0;
   text-align: center;
   border: 2px solid #444444;
-  margin: 26px 0 0;
+  margin: 26px 0 45px;
 
   &:focus,
   &:hover {
@@ -82,19 +92,21 @@
     color: #8d8d8d;
   }
 }
-@media(min-width: @tablet-width) {
+
+@media (min-width: @tablet-width) {
   .reviews {
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 668px;
-    height: 457px;
+    min-height: 457px;
     padding: 0 50px;
-    margin: 0 auto;
+    margin: 0 auto 85px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/review@2x.jpg");
       background-size: 350px 457px;
@@ -109,18 +121,20 @@
     margin: 77px -4px 0;
   }
 
+  .reviews__slider {
+    order: 3;
+  }
+
   .reviews__message {
     height: min-content;
-    order: 3;
     font-size: 17px;
-    margin: 30px 0 40px;
+    margin: 0 0 40px;
     min-width: 650px;
   }
 
   .reviews__author {
     height: min-content;
-    order: 4;
-    margin: 0;
+    margin: 55px 0 0;
     flex-direction: column;
   }
 
@@ -131,17 +145,15 @@
   .reviews__page {
     height: min-content;
     order: 5;
-    margin: 5px 0 35px;
+    position: absolute;
+    right: 48px;
+    bottom: 43px;
   }
 
   .reviews__change-page {
     height: min-content;
     max-width: 95px;
-    padding: 12px 20px 7px;
     border: none;
-  }
-
-  .reviews__change-page {
     padding: 20px 20px 0;
   }
 
@@ -153,10 +165,12 @@
     order: 2;
   }
 }
-@media(min-width: @desktop-width) {
+
+@media (min-width: @desktop-width) {
   .reviews {
     width: 875px;
     padding: 0 0 0 175px;
+    margin: 0 auto 155px;
   }
 
   .reviews__headline {
@@ -164,16 +178,22 @@
     order: 1;
     font-size: 53px;
     line-height: 57px;
-    margin: 70px 0 0;
+    margin: 76px 0 0;
   }
 
   .reviews__page {
-    margin: 0 0 90px;
+    right: 0;
+    bottom: 14px;
+    margin: 0 0 95px;
   }
 
   .reviews__message {
-    margin: 31px 0 23px;
+    margin: 45px 0 0;
     max-width: 800px;
+  }
+
+  .reviews__author {
+    margin: 38px 0 100px;
   }
 
   .reviews__contact {

@@ -21,6 +21,7 @@
   text-transform: uppercase;
   width: 60px;
   height: 12px;
+
   margin: 7px 0 18px;
 
   &::after {
@@ -28,7 +29,7 @@
     width: 200px;
     height: 2px;
     display: block;
-    content: '';
+    content: "";
     margin: -8px 0 0 60px;
   }
 }
@@ -83,25 +84,20 @@
   padding: 14px 0 7px;
 }
 
-.form input[type="checkbox"]:checked,
-.form input[type="checkbox"]:not(:checked),
-.form input[type="radio"]:checked,
-.form input[type="radio"]:not(:checked) {
+.form input[type="checkbox"],
+.form input[type="radio"] {
   position: absolute;
   left: -9999px;
 }
 
-.form input[type="checkbox"]:checked + label,
-.form input[type="checkbox"]:not(:checked) + label,
-.form input[type="radio"]:checked + label,
-.form input[type="radio"]:not(:checked) + label {
+.form input[type="checkbox"] + label,
+.form input[type="radio"] + label {
   position: relative;
   padding-left: 61px;
   cursor: pointer;
 }
 
-.form input[type="radio"]:checked + label::before,
-.form input[type="radio"]:not(:checked) + label::before {
+.form input[type="radio"] + label::before {
   content: "";
   position: absolute;
   width: 36px;
@@ -111,7 +107,6 @@
   left: -1px;
   top: -9px;
 
-  &:focus,
   &:hover {
     border: 2px solid #93dfd0;
   }
@@ -128,17 +123,15 @@
   border-radius: 50%;
 }
 
-.form input[type="radio"] + label:hover::before,
-.form input[type="radio"] + label:focus::before {
-  border-color: #62d1ba;
-}
-
 .form input[type="radio"] + label:active::before {
   border-color: #c9c9c9;
 }
 
-.form input[type="checkbox"]:checked + label::before,
-.form input[type="checkbox"]:not(:checked) + label::before {
+.form input[type="radio"]:focus + label::before {
+  border-color: #62d1ba;
+}
+
+.form input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   width: 36px;
@@ -159,17 +152,12 @@
 }
 
 .form input[type="checkbox"] + label:hover::before,
-.form input[type="checkbox"] + label:focus::before {
+.form input[type="checkbox"]:focus + label::before {
   border-color: #62d1ba;
 }
 
 .form input[type="checkbox"] + label:active::before {
   border-color: #c9c9c9;
-}
-
-.form input[type="checkbox"] + label:hover::after,
-.form input[type="checkbox"] + label:focus::after {
-  fill: #62d1ba;
 }
 
 .form__list-item--name input {
@@ -191,21 +179,8 @@
   flex-direction: column;
 }
 
-.form__icon--mail,
-.form__icon--phone {
-  position: absolute;
-  bottom: 17px;
-  right: 7px;
-}
-
-.form__icon--mail {
-  position: absolute;
-  bottom: 10px;
-  right: 3px;
-}
-
 .form__heading--phone {
-  margin: 25px 0 10px;
+  margin: 27px 0 10px;
 }
 
 .form__heading--mail {
@@ -244,9 +219,18 @@ textarea::-webkit-input-placeholder {
   color: #cccccc;
 }
 
-.form__icon--mail,
 .form__icon--phone {
   fill: #cccccc;
+  position: absolute;
+  bottom: 17px;
+  right: 9px;
+}
+
+.form__icon--mail {
+  fill: #cccccc;
+  position: absolute;
+  bottom: 7px;
+  right: 3px;
 }
 
 .form input[type="text"]:hover,
@@ -326,7 +310,8 @@ textarea::-webkit-input-placeholder {
     color: #8d8d8d;
   }
 }
-@media (min-width:@tablet-width) {
+
+@media (min-width: @tablet-width) {
   .form__heading {
     font-size: 17px;
     line-height: 16px;
@@ -342,19 +327,12 @@ textarea::-webkit-input-placeholder {
       width: 0;
       height: 0;
       display: block;
-      content: '';
+      content: "";
     }
   }
 
   .form__form-item {
     margin: 0 0 15px;
-  }
-
-  .form__background-wrapper {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    background-color: #f1f1f1;
   }
 
   .form__heading--color {
@@ -441,6 +419,8 @@ textarea::-webkit-input-placeholder {
 
   .form__list-item--name {
     padding: 18px 0 4px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
   }
 
   .form__form-item--mail,
@@ -462,15 +442,12 @@ textarea::-webkit-input-placeholder {
     margin-top: 63px;
   }
 
-  .form input[type="checkbox"]:checked + label,
-  .form input[type="checkbox"]:not(:checked) + label,
-  .form input[type="radio"]:checked + label,
-  .form input[type="radio"]:not(:checked) + label {
+  .form input[type="checkbox"] + label,
+  .form input[type="radio"] + label {
     padding-left: 80px;
   }
 
-  .form input[type="radio"]:checked + label:before,
-  .form input[type="radio"]:not(:checked) + label:before {
+  .form input[type="radio"] + label::before {
     width: 49px;
     height: 49px;
     top: -15px;
@@ -484,8 +461,7 @@ textarea::-webkit-input-placeholder {
     left: 15px;
   }
 
-  .form input[type="checkbox"]:checked + label:before,
-  .form input[type="checkbox"]:not(:checked) + label:before {
+  .form input[type="checkbox"] + label::before {
     width: 49px;
     height: 49px;
   }
@@ -499,11 +475,6 @@ textarea::-webkit-input-placeholder {
   .form__list--name {
     flex-grow: 1;
     padding: 27px 0;
-  }
-
-  .form__list-item--name {
-    justify-content: flex-start;
-    flex-wrap: nowrap;
   }
 
   .form__form-item__name {
@@ -604,7 +575,8 @@ textarea::-webkit-input-placeholder {
     flex-grow: 1;
   }
 }
-@media (min-width:@desktop-width) {
+
+@media (min-width: @desktop-width) {
   .form__background-wrapper::after {
     background-size: auto 36px;
   }
@@ -618,17 +590,13 @@ textarea::-webkit-input-placeholder {
     width: 111px;
   }
 
-  .form__form-item--type {
-    margin-bottom: 14px;
-  }
-
   .form__heading--color {
     margin-left: 60px;
     margin-right: 5px;
   }
 
   .form__list-item--color {
-    width: 260px;
+    width: 262px;
   }
 
   .form__form-item--type {
@@ -637,15 +605,21 @@ textarea::-webkit-input-placeholder {
 
   .form__form-item--color div {
     margin: 0 0 4px;
+    min-height: 228px;
   }
 
   .form__list--color {
     width: 786px;
     margin: 46px 0 29px;
+    justify-content: flex-start;
   }
 
   .form__form-item--color {
     min-height: 226px;
+  }
+
+  .form__form-item--phone {
+    margin: 0;
   }
 
   .form__heading--name {
@@ -672,8 +646,9 @@ textarea::-webkit-input-placeholder {
   }
 
   .form__form-item--contacts {
-    padding-top: 24px;
+    padding: 24px 0 50px;
     width: 873px;
+    min-height: 153px;
   }
 
   .form__icon--phone {
@@ -691,9 +666,12 @@ textarea::-webkit-input-placeholder {
     padding-left: 21px;
   }
 
-  .form input[type="radio"]:checked + label:before,
-  .form input[type="radio"]:not(:checked) + label:before {
+  .form input[type="radio"] + label::before {
     left: 1px;
+  }
+
+  .form input[type="radio"]:checked + label::after {
+    left: 17px;
   }
 
   .form__form-item--wishes {
